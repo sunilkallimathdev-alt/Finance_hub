@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinanceDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="BranchId" />
+    </Key>
+    <Property Name="BranchId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BrannchName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="2000" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Hirer">
+    <Key>
+      <PropertyRef Name="HirerId" />
+    </Key>
+    <Property Name="HirerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HirerName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="HirerFathername" Type="varchar" MaxLength="100" />
+    <Property Name="HirerAge" Type="int" />
+    <Property Name="HirerOccupation" Type="varchar" MaxLength="100" />
+    <Property Name="HirerMobileNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HirerAddress" Type="varchar" MaxLength="1000" />
+    <Property Name="HirerPhoto" Type="varchar(max)" />
+    <Property Name="HirerSignature" Type="varchar(max)" />
+    <Property Name="GuarantorName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="GuarantorFathername" Type="varchar" MaxLength="100" />
+    <Property Name="GuarantorAge" Type="int" />
+    <Property Name="GuarantorOccupation" Type="varchar" MaxLength="100" />
+    <Property Name="GuarantorMobileNumber" Type="varchar" MaxLength="50" />
+    <Property Name="GuarantorAddress" Type="varchar" MaxLength="1000" />
+    <Property Name="GuarantorPhoto" Type="varchar(max)" />
+    <Property Name="GuarantorSignature" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="10" />
+    <Property Name="HirerGender" Type="varchar" MaxLength="50" />
+    <Property Name="HirerAadharNumber" Type="varchar" MaxLength="50" />
+    <Property Name="GuarantorGender" Type="varchar" MaxLength="50" />
+    <Property Name="GuarantorAadharNumber" Type="varchar" MaxLength="50" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LoanDetails">
+    <Key>
+      <PropertyRef Name="LoanId" />
+    </Key>
+    <Property Name="LoanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HirerId" Type="int" Nullable="false" />
+    <Property Name="LoanDate" Type="datetime" Nullable="false" />
+    <Property Name="FinanceRs" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Interest" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+    <Property Name="Period" Type="int" />
+    <Property Name="Installment" Type="int" Nullable="false" />
+    <Property Name="RequiredLoanRs" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifirdBy" Type="nchar" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="10" />
+    <Property Name="LoanVisibility" Type="bit" />
+    <Property Name="LoanStatus" Type="varchar" MaxLength="50" />
+    <Property Name="TotalPendingAmount" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="PaidStatus" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LoanHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HirerID" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="50" />
+    <Property Name="EMIAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PenaltyAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PaidAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PendingAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PaidDate" Type="datetime" />
+    <Property Name="MonthYear" Type="datetime" />
+    <Property Name="ReceivedBy" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MobileNumber" Type="int" Nullable="false" />
+    <Property Name="BranchId" Type="int" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsActive" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="VehicleDetails">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Name="VehicleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HirerId" Type="int" Nullable="false" />
+    <Property Name="EngineNo" Type="varchar" MaxLength="255" />
+    <Property Name="ChassisNo" Type="varchar" MaxLength="255" />
+    <Property Name="Model" Type="varchar" MaxLength="255" />
+    <Property Name="KeyNo" Type="varchar" MaxLength="255" />
+    <Property Name="VehicleNo" Type="varchar" MaxLength="50" />
+    <Property Name="VehicleOnRoadRs" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsActive" Type="nvarchar" MaxLength="10" />
+    <Property Name="VehicleName" Type="varchar" MaxLength="100" />
+    <Property Name="VehicleImage" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <Association Name="FK__LoanDetai__Hirer__5FB337D6">
+    <End Role="Hirer" Type="Self.Hirer" Multiplicity="1" />
+    <End Role="LoanDetails" Type="Self.LoanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hirer">
+        <PropertyRef Name="HirerId" />
+      </Principal>
+      <Dependent Role="LoanDetails">
+        <PropertyRef Name="HirerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__BranchId__1CF15040">
+    <End Role="Branch" Type="Self.Branch" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="BranchId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__RoleId__1DE57479">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__VehicleDe__Hirer__571DF1D5">
+    <End Role="Hirer" Type="Self.Hirer" Multiplicity="1" />
+    <End Role="VehicleDetails" Type="Self.VehicleDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hirer">
+        <PropertyRef Name="HirerId" />
+      </Principal>
+      <Dependent Role="VehicleDetails">
+        <PropertyRef Name="HirerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FinanceDBModelStoreContainer">
+    <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hirer" EntityType="Self.Hirer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoanDetails" EntityType="Self.LoanDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoanHistory" EntityType="Self.LoanHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleDetails" EntityType="Self.VehicleDetails" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__LoanDetai__Hirer__5FB337D6" Association="Self.FK__LoanDetai__Hirer__5FB337D6">
+      <End Role="Hirer" EntitySet="Hirer" />
+      <End Role="LoanDetails" EntitySet="LoanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__BranchId__1CF15040" Association="Self.FK__User__BranchId__1CF15040">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__RoleId__1DE57479" Association="Self.FK__User__RoleId__1DE57479">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__VehicleDe__Hirer__571DF1D5" Association="Self.FK__VehicleDe__Hirer__571DF1D5">
+      <End Role="Hirer" EntitySet="Hirer" />
+      <End Role="VehicleDetails" EntitySet="VehicleDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,1039 @@
+E:\Work\HomeAppliances\ADMIN\bin\ApplicationInsights.config
+E:\Work\HomeAppliances\ADMIN\bin\ADMIN.dll.config
+E:\Work\HomeAppliances\ADMIN\bin\ADMIN.dll
+E:\Work\HomeAppliances\ADMIN\bin\ADMIN.pdb
+E:\Work\HomeAppliances\ADMIN\bin\Antlr3.Runtime.dll
+E:\Work\HomeAppliances\ADMIN\bin\API.dll
+E:\Work\HomeAppliances\ADMIN\bin\EntityFramework.dll
+E:\Work\HomeAppliances\ADMIN\bin\EntityFramework.SqlServer.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.Web.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.ApplicationInsights.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.SqlServer.Types.dll
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+E:\Work\HomeAppliances\ADMIN\bin\Newtonsoft.Json.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Helpers.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Mvc.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Optimization.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Razor.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.WebPages.Deployment.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.WebPages.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.WebPages.Razor.dll
+E:\Work\HomeAppliances\ADMIN\bin\WebGrease.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Http.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Http.Cors.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Http.WebHost.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Linq.Dynamic.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Net.Http.Formatting.dll
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Cors.dll
+E:\Work\HomeAppliances\ADMIN\bin\API.pdb
+E:\Work\HomeAppliances\ADMIN\bin\API.dll.config
+E:\Work\HomeAppliances\ADMIN\bin\EntityFramework.SqlServer.xml
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Helpers.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Mvc.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Optimization.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Razor.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.WebPages.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.WebPages.Deployment.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.WebPages.Razor.xml
+E:\Work\HomeAppliances\ADMIN\bin\Antlr3.Runtime.pdb
+E:\Work\HomeAppliances\ADMIN\bin\Newtonsoft.Json.xml
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.ApplicationInsights.xml
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+E:\Work\HomeAppliances\ADMIN\bin\Microsoft.AI.Web.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Http.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Http.Cors.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Web.Http.WebHost.xml
+E:\Work\HomeAppliances\ADMIN\bin\System.Net.Http.Formatting.xml
+E:\Work\HomeAppliances\ADMIN\obj\Debug\ADMIN.csprojResolveAssemblyReference.cache
+E:\Work\HomeAppliances\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+E:\Work\HomeAppliances\ADMIN\obj\Debug\ADMIN.dll
+E:\Work\HomeAppliances\ADMIN\obj\Debug\ADMIN.pdb
+E:\Work\home\ADMIN\bin\ApplicationInsights.config
+E:\Work\home\ADMIN\bin\ADMIN.dll.config
+E:\Work\home\ADMIN\bin\ADMIN.dll
+E:\Work\home\ADMIN\bin\ADMIN.pdb
+E:\Work\home\ADMIN\bin\API.dll
+E:\Work\home\ADMIN\bin\EntityFramework.SqlServer.dll
+E:\Work\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Work\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+E:\Work\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Work\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Work\home\ADMIN\bin\Microsoft.AI.Web.dll
+E:\Work\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+E:\Work\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+E:\Work\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Work\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+E:\Work\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+E:\Work\home\ADMIN\bin\Newtonsoft.Json.dll
+E:\Work\home\ADMIN\bin\System.Web.Helpers.dll
+E:\Work\home\ADMIN\bin\System.Web.Mvc.dll
+E:\Work\home\ADMIN\bin\System.Web.Optimization.dll
+E:\Work\home\ADMIN\bin\System.Web.Razor.dll
+E:\Work\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+E:\Work\home\ADMIN\bin\System.Web.WebPages.dll
+E:\Work\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+E:\Work\home\ADMIN\bin\WebGrease.dll
+E:\Work\home\ADMIN\bin\System.Web.Http.dll
+E:\Work\home\ADMIN\bin\System.Web.Http.Cors.dll
+E:\Work\home\ADMIN\bin\System.Web.Http.WebHost.dll
+E:\Work\home\ADMIN\bin\System.Linq.Dynamic.dll
+E:\Work\home\ADMIN\bin\System.Net.Http.Formatting.dll
+E:\Work\home\ADMIN\bin\System.Web.Cors.dll
+E:\Work\home\ADMIN\bin\API.pdb
+E:\Work\home\ADMIN\bin\API.dll.config
+E:\Work\home\ADMIN\bin\EntityFramework.SqlServer.xml
+E:\Work\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Work\home\ADMIN\bin\System.Web.Helpers.xml
+E:\Work\home\ADMIN\bin\System.Web.Mvc.xml
+E:\Work\home\ADMIN\bin\System.Web.Optimization.xml
+E:\Work\home\ADMIN\bin\System.Web.Razor.xml
+E:\Work\home\ADMIN\bin\System.Web.WebPages.xml
+E:\Work\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+E:\Work\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+E:\Work\home\ADMIN\bin\Newtonsoft.Json.xml
+E:\Work\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+E:\Work\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+E:\Work\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Work\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+E:\Work\home\ADMIN\bin\Microsoft.AI.Web.xml
+E:\Work\home\ADMIN\bin\System.Web.Http.xml
+E:\Work\home\ADMIN\bin\System.Web.Http.Cors.xml
+E:\Work\home\ADMIN\bin\System.Web.Http.WebHost.xml
+E:\Work\home\ADMIN\bin\System.Net.Http.Formatting.xml
+E:\Work\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+E:\Work\home\ADMIN\obj\Debug\ADMIN.dll
+E:\Work\home\ADMIN\obj\Debug\ADMIN.pdb
+E:\Work\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+E:\Work\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\home\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\ApplicationInsights.config
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\ADMIN.dll.config
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\ADMIN.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\ADMIN.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\API.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Razor.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\WebGrease.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Http.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Http.Cors.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Http.WebHost.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Linq.Dynamic.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Net.Http.Formatting.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Cors.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\API.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\API.dll.config
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Razor.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Http.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Http.Cors.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Web.Http.WebHost.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\bin\System.Net.Http.Formatting.xml
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\balajikn\Documents\Balaji\MMT\AVAhome\home\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\ADMIN.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\ADMIN.pdb
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\API.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\WebGrease.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\API.pdb
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\API.dll.config
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+C:\Users\john\Desktop\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+C:\Users\john\Desktop\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\john\Desktop\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+C:\Users\john\Desktop\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\john\Desktop\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.ValueTuple.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.ValueTuple.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\MoreLinq.dll
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\MoreLinq.pdb
+F:\Mindmaps\Projects\homeAVA - New\homeAVA\home\ADMIN\bin\MoreLinq.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\MoreLinq.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.ValueTuple.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\MoreLinq.pdb
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\MoreLinq.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.ValueTuple.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\API.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\MoreLinq.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.ValueTuple.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\API.pdb
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\API.dll.config
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\MoreLinq.pdb
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\MoreLinq.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.ValueTuple.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\Mindmaps\Projects\HomeAVA\homeAVA - New - Copy\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\API.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\MoreLinq.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.ValueTuple.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\API.pdb
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\API.dll.config
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\MoreLinq.pdb
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\MoreLinq.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.ValueTuple.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ApplicationInsights.config
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ADMIN.dll.config
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ADMIN.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\ADMIN.pdb
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\API.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\MoreLinq.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Newtonsoft.Json.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.ValueTuple.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Helpers.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Mvc.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Optimization.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Razor.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\WebGrease.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Linq.Dynamic.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Cors.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\API.pdb
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\API.dll.config
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\EntityFramework.SqlServer.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\MoreLinq.pdb
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\MoreLinq.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.ValueTuple.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Helpers.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Mvc.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Optimization.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Razor.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Newtonsoft.Json.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\Microsoft.AI.Web.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.Cors.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Web.Http.WebHost.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\bin\System.Net.Http.Formatting.xml
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.dll
+F:\homeAVA - mylatest\homeAVA - New -Jul 22 (1)\homeAVA - New -Jul 22\homeAVA\home\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\ApplicationInsights.config
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\ADMIN.dll.config
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\ADMIN.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\ADMIN.pdb
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\API.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\MoreLinq.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.ValueTuple.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Razor.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\WebGrease.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Http.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Http.Cors.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Http.WebHost.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Linq.Dynamic.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Net.Http.Formatting.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Cors.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\API.pdb
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\API.dll.config
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\MoreLinq.pdb
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\MoreLinq.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.ValueTuple.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Razor.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Http.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Http.Cors.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Web.Http.WebHost.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\bin\System.Net.Http.Formatting.xml
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\balajikn\Downloads\homeAPP_26_02_2020\home\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\ApplicationInsights.config
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\ADMIN.dll.config
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\ADMIN.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\ADMIN.pdb
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\API.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\MoreLinq.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.ValueTuple.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Razor.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\WebGrease.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Http.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Http.Cors.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Http.WebHost.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Linq.Dynamic.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Net.Http.Formatting.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Cors.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\API.pdb
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\API.dll.config
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\MoreLinq.pdb
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\MoreLinq.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.ValueTuple.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Razor.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Http.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Http.Cors.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Web.Http.WebHost.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\bin\System.Net.Http.Formatting.xml
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\balajikn\Desktop\EXR\EXR_New\EXR\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\ApplicationInsights.config
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\ADMIN.dll.config
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\ADMIN.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\ADMIN.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\MoreLinq.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.ValueTuple.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Razor.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\WebGrease.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\MoreLinq.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\MoreLinq.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.ValueTuple.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.Razor.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New - Copy\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\ApplicationInsights.config
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\ADMIN.dll.config
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\ADMIN.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\ADMIN.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\MoreLinq.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.ValueTuple.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Razor.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\WebGrease.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\MoreLinq.pdb
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\MoreLinq.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.ValueTuple.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.Razor.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\obj\Debug\ADMIN.csprojAssemblyReference.cache
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\obj\Debug\ADMIN.csproj.CopyComplete
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\balajikn\Documents\Balaji\MMT\2020\Finance_New\ADMIN\obj\Debug\ADMIN.pdb
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\ApplicationInsights.config
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\ADMIN.dll.config
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\ADMIN.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\ADMIN.pdb
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\EntityFramework.SqlServer.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.Web.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\MoreLinq.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Newtonsoft.Json.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.ValueTuple.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Helpers.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Mvc.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Optimization.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Razor.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.WebPages.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.WebPages.Razor.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\WebGrease.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\EntityFramework.SqlServer.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\MoreLinq.pdb
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\MoreLinq.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.ValueTuple.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Helpers.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Mvc.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Optimization.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.Razor.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.WebPages.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\System.Web.WebPages.Razor.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Newtonsoft.Json.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\bin\Microsoft.AI.Web.xml
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\obj\Debug\ADMIN.csproj.AssemblyReference.cache
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\obj\Debug\ADMIN.csproj.Up2Date
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\obj\Debug\ADMIN.dll
+C:\Users\Suni\OneDrive\Pictures\Finance_New\Finance_New\ADMIN\obj\Debug\ADMIN.pdb

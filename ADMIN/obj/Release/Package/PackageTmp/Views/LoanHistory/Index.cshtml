@@ -1,0 +1,294 @@
+
+@{
+    ViewBag.Title = "LoanHistory";
+}
+<div class="form-horizontal">
+    <h4>Loan History</h4>
+    <hr />
+    <div class="form-control" style="margin:5px; !important">
+        <div class="row">
+            <div class="col-lg-4 col-6">
+                <input type="text" name="searchKey" class="form-control" placeholder="Mobile Number / Vehicle Number / Aadhar Number" width="500">
+            </div>
+            <div class="col-lg-3 col-6">
+                <button type="button" id="btnSearch" class="btn btn-info">Search <i class="nav-icon fa fa-search"></i></button>
+            </div>
+            <div class="col-sm-3">
+                @*<label>Enter Amount :</label>*@
+                <input type="number" name="HAmount" id="HirAmt" class="form-control col-sm-11" placeholder="Enter Amount" />
+                <input type="hidden" name="hfHirerID" />
+            </div>
+            <div class="col-sm-2">
+                <input type="submit" id="btnSave" class="btn btn-success btn-primary" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section class="content" style="margin-top:12px">
+    <div class="container-fluid" id="dvHirerDetails">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label> Name : </label>  <label id="HName"> </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label> Vehicle Number : </label>  <label id="VNo"> </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Mobile Number : </label>  <label id="HMNo"> </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Vehicle Name : </label>  <label id="HVName"> </label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Loan Amount : </label>  <label id="HLoanAmt"> </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Pending Amount : </label>  <label id="HPendAmt"> </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Status : </label>  <label id="HStatus"> </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>EMI Amount :</label><label id="EMIAmount"> </label>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img id="imgHirer" height="100px" width="100px" class="Image">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid" id="dvLoanHistory">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <!-- /.card-header -->
+                    <div class="card">
+                        <!-- /.card-header -->
+
+                        <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>EMI Amount</th>
+                                        <th>Month-Year</th>
+                                        <th>Penalty Amount</th>
+                                        <th>Total Amount</th>
+                                        <th>Paid Date</th>
+                                        <th>Paid Amount</th>
+                                        <th>Pending Amount</th>
+                                        <th>Received-By</th>
+
+                                    </tr>
+                                </thead>
+
+                                <tbody id="tbody"></tbody>
+
+                                <tfoot>
+
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+
+
+
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="~/CustomFiles/js/Common_js.js"></script>
+<script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+<script>
+
+    var tableId = "tbl";
+
+    $(document).ready(function () {
+
+        $("#dvHirerDetails").hide();
+        $("#dvLoanHistory").hide();
+        $("#HirAmt").hide();
+        $("#btnSave").hide();
+
+
+        //BindTableData();
+
+        $("#btnSearch").click(function () {
+
+            $("#dvHirerDetails").hide();
+            $("#dvLoanHistory").hide();
+            $("#HirAmt").hide();
+            $("#btnSave").hide();
+
+            var objSearch = new Object();
+            objSearch.SearchKey = $('[name="searchKey"]').val();
+
+            $.post("@Url.Action("GetHirerDetails", "LoanHistory")", { objHirer: JSON.stringify(objSearch) }, function (data) {
+                var Res = JSON.parse(data);
+                if (Res != null) {
+
+                    $("#dvHirerDetails").show();
+                    $("#dvLoanHistory").show();
+                    $("#HirAmt").show();
+                    $("#btnSave").show();
+
+                    //ClearFields();
+                    BindHirerDetails(Res);
+                    BindTableData(Res);
+                }
+                else {
+                    WarningAlert("", "No matching data");
+                }
+
+            });
+        });
+
+
+        $("#btnSave").click(function () {
+
+            document.getElementById("btnSave").disabled = true;
+
+            var myobj = new Object();
+            //LoanHistory
+            myobj.HirerId = $('[name="HId"]').val();
+            myobj.Amount = $('[name="HAmount"]').val();
+
+
+
+            $.post("@Url.Action("saveLoanHistory", "LoanHistory")", { ObjLH: JSON.stringify(myobj) }, function (data) {
+                var Res = JSON.parse(data);
+                alert(Res);
+
+                var Res = JSON.parse(data);
+                if (Res > 0) {
+                    SuccessAlert("@ViewBag.Title", "Added Successfully.");
+                    //ClearFields();
+                    //BindTableData();
+                }
+                else {
+                    WarningAlert("@ViewBag.Title", "Not Saved. Some issue");
+                }
+
+            });
+        });
+
+    });
+
+    function BindHirerDetails(myObject) {
+        $('#HName').html(myObject.HirerName);
+        $('#VNo').html(myObject.VehicleNo);
+        $('#HMNo').html(myObject.HirerMobileNumber);
+        $('#HVName').html(myObject.VehicleName);
+
+        $('#HLoanAmt').html(myObject.TotalLoanAmount);
+        $('#HPendAmt').html(myObject.TotalPendingAmount);
+        $('#HStatus').html(myObject.PaidStatus);
+        $('#EMIAmount').html(myObject.EMIAmount);
+        
+
+        $("#imgHirer").attr("src", myObject.HirerPhoto);
+    }
+
+
+    function BindTableData(myObject) {
+
+        var objUsrLoanDet = new Object();
+        var HirerID = myObject.HirerId;
+        if (HirerID > 0) {
+            objUsrLoanDet.HirerID = HirerID; //$('#hfHirerID').val();
+            $.post("@Url.Action("GetLoanHistory", "LoanHistory")", { ObjLoanHistory: JSON.stringify(objUsrLoanDet) }, function (data) {
+                var myObject = JSON.parse(data);
+                var String = "";
+
+                if (myObject.length > 0) {
+                    for (var i = 0; i < myObject.length; i++) {
+
+                        String = String + "<tr>";
+                        String = String + "<td>" + (i + 1) + "</td>";
+                        String = String + "<td>" + myObject[i].EMIAmount + "</td>";
+                        String = String + "<td>" + myObject[i].Month_Year + "</td>";
+                        String = String + "<td>" + myObject[i].PenaltyAmount + "</td>";
+                        String = String + "<td>" + myObject[i].TotalAmount + "</td>";
+                        String = String + "<td>" + myObject[i].PaidDate + "</td>";
+                        String = String + "<td>" + myObject[i].PaidAmount + "</td>";
+                        String = String + "<td>" + myObject[i].PendingAmount + "</td>";
+                        String = String + "<td>" + myObject[i].ReceivedBy + "</td>";
+                        String = String + "</tr>";
+                    }
+                }
+                else {
+                    String = String + "<tr>";
+                    String = String + "<td colspan='9'> No data </td>";
+                    String = String + "</tr>";
+                }
+
+                $('#tbody').html(String);
+            });
+        }
+    }
+
+
+
+
+
+
+
+    //validation
+    $('#Registration').validate({
+            rules: {
+                HName: {
+                    required: true,
+                },
+                HAge: {
+                    required: true,
+            },
+                HMobNumber: {
+                required: true,
+            },
+                 HAddress: {
+                  required: true,
+            },
+            HName: {
+                required: true,
+            },
+            }
+    });
+
+</script>

@@ -1,0 +1,604 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+@using API.Models;
+@using ADMIN.API_Repository;
+
+
+@{
+    /**/
+
+    Layout = null;
+    ViewBag.Title = "Owner";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register | Home Appliances</title>
+    <link rel="icon" href="~/CustomFiles/logo.png">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+   
+    <!--Toastr CSS-->
+    <link rel="stylesheet" href="~/CustomFiles/dist/css/toastr.min.css" />
+    
+    <!-- Theme style -->
+    <!-- iCheck -->
+    <link href="~/CustomFiles/dist/css/adminlte.css" rel="stylesheet" />
+    <link href="~/CustomFiles/dist/css/adminlte.css.map" />
+    <link href="~/CustomFiles/dist/css/loader.css" rel="stylesheet" />
+    <link href="~/CustomFiles/dist/css/toastr.min.css" rel="stylesheet" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        #buttons {
+            padding: 5px;
+        }
+
+        .error {
+            color: red !important;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #00870e;
+        }
+
+        li {
+            float: left;
+            display: inline;
+        }
+
+            li a {
+                display: block;
+                color: #ffffff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+                li a:hover {
+                    background-color: #00870e;
+                }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="image">
+                    <img src="~/CustomFiles/logo.png" style="width:8rem;" class="img elevation-2" alt="User Image">
+                </div>
+            </div>
+            <ul>
+                <li><a href="/Filter/Search">Home</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <form id="formowner" autocomplete="off">
+            <div class="card card-info" id="carddiv">
+                <div class="card-header" data-widget="collapse">
+                    <h3 class="card-title">Sign up</h3>
+                    @*<div class="card-tools">
+                            <button type="button" class="btn btn-tool"><i class="fa fa-plus"></i></button>
+                        </div>*@
+                </div>
+                <div class="card-body">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>First Name<span style="color:red">*</span></h6>
+                                <input class="form-control" type="text" name="First_Name" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>Last Name<span style="color:red">*</span></h6>
+                                <input class="form-control" type="text" name="Last_Name" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>User Name<span style="color:red">*</span></h6>
+                                <input class="form-control" type="text" name="User_Name" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>Phone Number<span style="color:red">*</span></h6>
+                                <input class="form-control" type="text" name="Mobile_No" maxlength="15" onkeypress="return IsNumeric(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>Email Id<span style="color:red">*</span></h6>
+                                <input class="form-control" type="text" name="Email_Id" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>Mailing Home Address<span style="color:red">*</span></h6>
+                                <textarea class="form-control" type="text" name="Homemail_Add" maxlength="100" onkeypress="return NotanHTML(event)"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>Zip Code<span style="color:red">*</span></h6>
+                                <input class="form-control" type="text" name="ZipCode" maxlength="5" onkeypress="return IsNumeric(event)">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <h6>Referral<span style="color:red">*</span></h6>
+                                <select class="form-control" name="Referral" id="Referral">
+                                    <option value="">Select</option>
+                                    <option value="Realtor">Realtor</option>
+                                    <option value="Service Vendor">Service Vendor</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Internet">Internet</option>
+                                    <option value="Billboard">Billboard</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div id="addSVendorDIV">
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Vendor name<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="Vendor_Name" maxlength="100" onkeypress="return NotanHTML(event)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Address<span style="color:red">*</span></h6>
+                                            <textarea class="form-control" type="text" name="VendorAddress" maxlength="100" onkeypress="return NotanHTML(event)"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Phone Number<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="VendorPhone_No" maxlength="15" onkeypress="return IsNumeric(event)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Email Id<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="VendorEmail_Id" maxlength="100" onkeypress="return NotanHTML(event)">
+                                        </div>
+                                    </div>
+
+                                    @*<div class="col-md-4">
+                                            <div class="form-group">
+                                                <h6>Specialization<span style="color:red">*</span></h6>
+                                                <input class="form-control" type="text" name="Specialization" maxlength="100" onkeypress="return NotanHTML(event)">
+                                            </div>
+                                        </div>*@
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <h6>Description<span style="color:red"></span></h6>
+                                            <textarea class="form-control" type="text" name="VenDescription" maxlength="1000" onkeypress="return NotanHTML(event)"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Realtor Division-->
+
+                            <div id="addRealtorDIV">
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Real estate agent name<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="Realtor_Name" maxlength="100" onkeypress="return NotanHTML(event)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Phone Number<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="RealtorPhone_No" maxlength="15" onkeypress="return IsNumeric(event)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Email Id<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="RealtorEmail_Id" maxlength="100" onkeypress="return NotanHTML(event)">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <h6>Company name<span style="color:red">*</span></h6>
+                                            <input class="form-control" type="text" name="Company_Name" maxlength="100" onkeypress="return NotanHTML(event)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <h6>Description<span style="color:red"></span></h6>
+                                            <textarea class="form-control" type="text" name="Description" maxlength="1000" cols="8" onkeypress="return NotanHTML(event)"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                @*<div class="card-footer">
+                                        <button type="button" class="btn btn-danger" id="btnreset" onclick="RealtorClear()" style="float:right">Cancel</button>
+                                        <button type="button" class="btn btn-success" id="btnvendoradd" onclick="addRealtor()" style="float:right">Add Vendor</button>
+                                    </div>*@
+
+                            </div>
+                        </div>
+                        @*<div class="col-md-3">
+                                <div class="form-group">
+                                    <h6>Package Type<span style="color:red">*</span></h6>
+                                    <select class="form-control" name="PackageType" id="PackageType">
+                                        <option value="">Select</option>
+                                        <option value="Package 1">Package 1</option>
+                                        <option value="Package 2">Package 2</option>
+                                        <option value="Package 3">Package 3</option>
+                                    </select>
+                                </div>
+                            </div>*@
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="card-footer">
+                <button type="button" class="btn btn-success" id="btnadd">Register</button>
+                @*<button type="button" class="btn btn-warning" id="btnupdate">Update @ViewBag.Title</button>*@
+                <button type="button" class="btn btn-danger" onclick="ClearFields()" id="btnreset">Cancel</button>
+                @* <input type="hidden" name="HDID" />
+                    <input type="hidden" name="HDReID" />
+                    <input type="hidden" name="HDSeID" />*@
+            </div>
+        </form>
+    </div>
+
+
+    <script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="~/CustomFiles/js/Common_js.js"></script>
+    <script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+    
+     <script>
+
+
+            $('#formowner').validate({
+                rules: {
+                    First_Name: {
+                        required: true,
+                    },
+                    Last_Name: {
+                        required: true,
+                    },
+                    User_Name: {
+                        required: true,
+                    },
+                    Mobile_No: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 15,
+                        digits: true
+                    },
+                    Email_Id: {
+                        required: true,
+                        email: true
+                    },
+                    Homemail_Add: {
+                        required: true
+                    },
+
+                    ZipCode: {
+                        required: true
+                    },
+                    Referral: {
+                        required: true
+                    },
+                    PackageType: {
+                        required: true
+                    },
+
+                    Vendor_Name: {
+                        required: true,
+                    },
+
+                    VendorAddress: {
+                        required: true,
+                    },
+                    VendorPhone_No: {
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 15,
+                        required: true,
+                    },
+                    VendorEmail_Id: {
+                        email: true,
+                        required: true,
+                    },
+                    Specialization: {
+                        required: true,
+                    },
+
+                    Realtor_Name: {
+                        required: true,
+                    },
+
+                    RealtorPhone_No: {
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 15,
+                        required: true,
+                    },
+                    RealtorEmail_Id: {
+                        email: true,
+                        required: true,
+                    },
+                    Company_Name: {
+                        required: true,
+                    },
+                }
+            });
+            var form = $("#formowner");
+             form.validate();
+
+        $(document).ready(function () {
+            // BindTableData();
+           // hideshowbuttons();
+            $("#addRealtorDIV").hide();
+            $("#addSVendorDIV").hide();
+          //  $('#btnupdate').hide();
+
+            $("#Referral").on("change", function () {
+
+                if ($(this).val() === 'Realtor') {
+                    $("#addRealtorDIV").show();
+                    $('#addSVendorDIV').hide();
+
+                }
+                else if ($(this).val() === 'Service Vendor') {
+                    $('#addSVendorDIV').show();
+                    $('#addRealtorDIV').hide();
+
+                }
+
+                else {
+                    $('#addRealtorDIV').hide();
+                    $('#addSVendorDIV').hide();
+                }
+            });
+
+
+            $("#btnadd").click(function () {
+
+                if (form.valid()) {
+
+                    var myobj = new Object();
+                    if ($("#Referral").val() === 'Service Vendor') {
+                        var ArrVen = [];
+                        var VenObj = new Object();
+                        VenObj.Vendor_Contact_Name = $('[name="Vendor_Name"]').val();
+                        VenObj.Address = $('[name="VendorAddress"]').val();
+                        VenObj.Mobile = $('[name="VendorPhone_No"]').val();
+                        VenObj.EmailID = $('[name="VendorEmail_Id"]').val();
+                        //VenObj.Vendor_Specialise_List = $('[name="Specialization"]').val();
+                        VenObj.Description = $('[name="VenDescription"]').val();
+                        ArrVen.push(VenObj)
+                        myobj.Service_Vendor = ArrVen;
+
+                        myobj.First_Name = $('[name="First_Name"]').val();
+                        myobj.Last_Name = $('[name="Last_Name"]').val();
+                        myobj.UserName = $('[name="User_Name"').val();
+                        myobj.Mobile_No = $('[name="Mobile_No"]').val();
+                        myobj.Email_Id = $('[name="Email_Id"]').val();
+                        myobj.Address = $('[name="Homemail_Add"]').val();
+                        myobj.Zip_Code = $('[name="ZipCode"]').val();
+                        myobj.Reffered_By = $('[name="Referral"]').val();
+                        myobj.Package_Type = $('[name="PackageType"]').val();
+                        myobj.Owner_type = "PreOwner";
+                    @*myobj.CustRep_ID =@CustomerRep_ID*@
+
+                        $.post("@Url.Action("Add", "PreOwner")", { ObjOwner: JSON.stringify(myobj) }, function (data) {
+
+                            var Res = JSON.parse(data);
+                            if (Res.StatusCode == 200) {
+
+                                SuccessAlert("@ViewBag.Title", "Added Successfully.Update Password Link sent to EmailID");
+                              //  alert("Added Successfully.Update Password Link sent to EmailID");
+                                ClearFields();
+                                //  BindTableData();
+                            }
+                            else {
+
+                                 WarningAlert("@ViewBag.Title", Res.Message);
+                                //alert("Please Retry");
+                            }
+
+
+                        });
+
+
+
+                    }
+                    else if ($("#Referral").val() === 'Realtor') {
+                        var ArrRealtor = [];
+                        var RealObj = new Object();
+
+                        RealObj.Name = $('[name="Realtor_Name"]').val();
+                        RealObj.Phone_No = $('[name="RealtorPhone_No"]').val();
+                        RealObj.Email_Id = $('[name="RealtorEmail_Id"]').val();
+                        RealObj.Company_Name = $('[name="Company_Name"]').val();
+                        RealObj.Description = $('[name="Description"]').val();
+
+                        ArrRealtor.push(RealObj)
+                        myobj.Realtor = ArrRealtor;
+
+                        myobj.First_Name = $('[name="First_Name"]').val();
+                        myobj.Last_Name = $('[name="Last_Name"]').val();
+                        myobj.UserName = $('[name="User_Name"').val();
+                        myobj.Mobile_No = $('[name="Mobile_No"]').val();
+                        myobj.Email_Id = $('[name="Email_Id"]').val();
+                        myobj.Address = $('[name="Homemail_Add"]').val();
+                        myobj.Zip_Code = $('[name="ZipCode"]').val();
+                        myobj.Reffered_By = $('[name="Referral"]').val();
+                        myobj.Package_Type = $('[name="PackageType"]').val();
+                        myobj.Owner_type = "PreOwner";
+                           @*myobj.CustRep_ID =@CustomerRep_ID*@
+
+                        $.post("@Url.Action("Add", "PreOwner")", { ObjOwner: JSON.stringify(myobj) }, function (data) {
+
+                            var Res = JSON.parse(data);
+                            if (Res.StatusCode == 200) {
+
+                                SuccessAlert("@ViewBag.Title", "Added Successfully.Update Password Link sent to EmailID");
+                               // alert("Added Successfully.Update Password Link sent to EmailID");
+                                ClearFields();
+                                //  BindTableData();
+                            }
+                            else {
+
+                                 WarningAlert("@ViewBag.Title", Res.Message);
+                                //alert("Please Retry");
+                            }
+
+
+                        });
+                    }
+
+                    else {
+                        myobj.First_Name = $('[name="First_Name"]').val();
+                        myobj.Last_Name = $('[name="Last_Name"]').val();
+                        myobj.UserName = $('[name="User_Name"').val();
+                        myobj.Mobile_No = $('[name="Mobile_No"]').val();
+                        myobj.Email_Id = $('[name="Email_Id"]').val();
+                        myobj.Address = $('[name="Homemail_Add"]').val();
+                        myobj.Zip_Code = $('[name="ZipCode"]').val();
+                        myobj.Reffered_By = $('[name="Referral"]').val();
+                        myobj.Package_Type = $('[name="PackageType"]').val();
+                        myobj.Owner_type = "PreOwner";
+                            @*myobj.CustRep_ID =@CustomerRep_ID*@
+
+                        $.post("@Url.Action("Add", "PreOwner")", { ObjOwner: JSON.stringify(myobj) }, function (data) {
+
+                            var Res = JSON.parse(data);
+                            if (Res.StatusCode == 200) {
+
+                                SuccessAlert("@ViewBag.Title", "Added Successfully.Update Password Link sent to EmailID");
+                               // alert("Added Successfully.Update Password Link sent to EmailID");
+                                ClearFields();
+                                //  BindTableData();
+                            }
+                            else {
+
+                                WarningAlert("@ViewBag.Title", Res.Message);
+                                // alert("Please Retry");
+                            }
+
+
+                        });
+                         }
+                }
+
+            });
+        });
+
+       // Realtor Modal clear
+
+
+         function RealtorClear() {
+
+               $('[name="Realtor_Name"]').val(null);
+               $('[name="RealtorPhone_No"]').val(null);
+               $('[name="RealtorEmail_Id"]').val(null);
+               $('[name="Company_Name"]').val(null);
+               $('[name="Description"]').val(null);
+               $("#addRealtorDIV").hide();
+
+               $('#Referral').val('');
+         }
+
+     //Vendor Modal clear
+        function VendorClear() {
+
+            $('[name="Vendor_Name"]').val(null);
+            $('[name="VendorAddress"]').val(null);
+            $('[name="VendorPhone_No"]').val(null);
+            $('[name="VendorEmail_Id"]').val(null);
+            $('[name="Specialization"]').val(null);
+            $('[name="VenDescription"]').val(null);
+            $("#addSVendorDIV").hide();
+            $('#Referral').val('');
+        }
+
+
+
+        function ClearFields() {
+                $('[name="First_Name"]').val(null);
+                $('[name="Last_Name"]').val(null);
+                $('[name="User_Name"').val(null);
+                $('[name="Mobile_No"]').val(null);
+                $('[name="Email_Id"]').val(null);
+                $('[name="Homemail_Add"]').val(null);
+                $('[name="ZipCode"]').val(null);
+                $('#Referral').val('');
+                $('#PackageType').val('');
+                RealtorClear();
+                VendorClear();
+                $("#addRealtorDIV").hide();
+                $("#addSVendorDIV").hide();
+                  //location.reload(true);
+                $('.error').html("");
+                $("#btnadd").show();
+                $('#btnupdate').hide();
+        }
+
+
+
+         function SuccessAlert(Title, Message) {
+             toastr.success(Message, Title)
+         }
+         function WarningAlert(Title, Message) {
+             toastr.warning(Message, Title)
+        }
+         function DangerAlert(Title, Message) {
+             toastr.error(Message, Title)
+        }
+
+    </script>
+
+
+</body>
+
+</html>

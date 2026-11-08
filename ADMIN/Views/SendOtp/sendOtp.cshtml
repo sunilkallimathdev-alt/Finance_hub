@@ -1,0 +1,233 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+@using API.Models;
+@using ADMIN.API_Repository;
+
+
+@{
+    /**/
+
+    Layout = null;
+    ViewBag.Title = "Otp";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register | Home Appliances</title>
+    <link rel="icon" href="~/CustomFiles/logo.png">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!--Toastr CSS-->
+    <link rel="stylesheet" href="~/CustomFiles/dist/css/toastr.min.css" />
+
+    <!-- Theme style -->
+    <!-- iCheck -->
+    <link href="~/CustomFiles/dist/css/adminlte.css" rel="stylesheet" />
+    <link href="~/CustomFiles/dist/css/adminlte.css.map" />
+    <link href="~/CustomFiles/dist/css/loader.css" rel="stylesheet" />
+    <link href="~/CustomFiles/dist/css/toastr.min.css" rel="stylesheet" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        #buttons {
+            padding: 5px;
+        }
+
+        .error {
+            color: red !important;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #00870e;
+        }
+
+        li {
+            float: left;
+            display: inline;
+        }
+
+            li a {
+                display: block;
+                color: #ffffff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+                li a:hover {
+                    background-color: #00870e;
+                }
+    </style>
+
+</head>
+<body>
+    <div class="content-header">
+
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">@ViewBag.Title</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">@ViewBag.Title</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <form id="formvendor">
+                <div class="card card-info" id="carddiv">
+                    <div class="card-header" data-widget="collapse" style="cursor:pointer">
+                        <h3 class="card-title">Send @ViewBag.Title</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool"><i class="fa"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Mobile Number<span style="color:red">*</span></label>
+                                    <input class="form-control" type="text" name="MobNum" maxlength="10" onkeypress="return IsNumeric(event)">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>OTP<span style="color:red">*</span></label>
+                                    <input class="form-control" type="text" name="Otp" maxlength="4" onkeypress="return IsNumeric(event)">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success" id="btnadd">Send @ViewBag.Title</button>
+
+                            <button type="button" class="btn btn-danger" id="btnreset" onclick="ClearFields()">Cancel</button>
+                            <input type="hidden" name="HDID" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="~/CustomFiles/js/Common_js.js"></script>
+    <script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+
+    <script>
+
+    var tableId = "tbl";
+
+      @*$('[name="CustomerRep_ID"]').val(@CustomerRep_ID);*@
+        $('#formvendor').validate({
+            rules: {
+
+                MobNum: {
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 10,
+                    required: true,
+                },
+                Otp: {
+
+                    required: true,
+                    maxlength: 4,
+                    minlength: 4,
+
+                },
+
+
+            }
+        });
+
+        var form = $("#formvendor");
+        form.validate();
+
+    $(document).ready(function () {
+        $('#btnupdate').hide();
+        //BindTableData().val();
+        $('#btnadd').click(function () {
+           // if (isAddEnabled == true) {
+                if (form.valid()) {
+                    var myobj = new Object();
+                    myobj.contacts= $('[name="MobNum"]').val();
+
+                    myobj.otp = $('[name="Otp"]').val();
+
+                    $.post("@Url.Action("Send_Otp", "SendOtp")", { Mob_Num: myobj.contacts, otp:myobj.otp }, function (data) {
+                        var Res = JSON.parse(data);
+                        if (Res !="ERR: NO VALID CONTACT SUPPLIED") {
+
+                                SuccessAlert("@ViewBag.Title", "sent Successfully.");
+                                ClearFields();
+                             // BindTableData().val();
+                            }
+                            else
+                                WarningAlert("@ViewBag.Title", Res.Message);
+                        });
+                }
+                else {
+                    DangerAlert(" ", "Recheck the fields.");
+                }
+            //} else {
+            //    DangerAlert("Sorry No access To Add");
+            //}
+
+        });
+    });
+
+
+     function ClearFields() {
+
+
+         $('[name="MobNum"]').val(null);
+         $('[name="Otp"]').val(null);
+         $('.error').html("");
+         $("#carddiv h3").text("Send @ViewBag.Title");
+         $('#btnupdate').hide();
+         $('#btnadd').show();
+     }
+
+
+        function SuccessAlert(Title, Message) {
+            toastr.success(Message, Title)
+        }
+        function WarningAlert(Title, Message) {
+            toastr.warning(Message, Title)
+        }
+        function DangerAlert(Title, Message) {
+            toastr.error(Message, Title)
+        }
+
+    </script>
+
+</body>

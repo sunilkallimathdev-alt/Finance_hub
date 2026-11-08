@@ -1,0 +1,476 @@
+﻿@using Newtonsoft.Json.Linq;
+@using Newtonsoft.Json
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AVA Homes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/iCheck/all.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/timepicker/bootstrap-timepicker.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/select2/select2.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/CustomFiles/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!--Toastr CSS-->
+    <link href="~/CustomFiles/dist/css/toastr.min.css" rel="stylesheet" />
+    <!--DataTable-->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/datatables/dataTables.bootstrap4.css">
+
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">*@
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+
+
+    <style>
+        #buttons {
+            padding: 5px;
+        }
+
+        .error {
+            color: red !important;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #00870e;
+        }
+
+        li {
+            float: left;
+            display: inline;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+                li a:hover {
+                    background-color: #ffffff;
+                }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="image">
+                    <img src="~/CustomFiles/logo.png" style="width:8rem;" class="img elevation-2" alt="User Image">
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="/Filter/Register">Sign Up</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section class="content">
+        <div class="container-fluid">
+            <form id="serch">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Search by Street,ZipCode and Score" name="srch-term" id="srch-term" type="text" />
+                            <button class="btn btn-default" type="button" id="btnsrch"><i class="fa fa-search"></i></button>
+
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <br />
+                <br />
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4" id="srch_list">
+
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container modal col-12" id="LotDetailsDIV">
+            <!--Modal popup of Warranty Details-->
+            <div class="card  modal-content" id="LotDetails">
+                <div class="card-header" style="cursor:pointer">
+                    <strong class="card-title">House Details  <span class="close" style="color:black">&times;</span></strong>
+                </div>
+                <div class="card-body">
+                    <div class="row col-12" id="Lot_details">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <style>
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            display: block;
+            background-color: #fefefe;
+            margin: auto;
+            /*padding: 20px;*/
+            border: 1px solid #888;
+            width: 60%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+
+</body>
+</html>
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="~/CustomFiles/js/Common_js.js"></script>
+<!-- Select2 -->
+<script src="~/CustomFiles/plugins/select2/select2.full.min.js"></script>
+
+<script type="text/javascript">
+
+
+    var srch = "";
+
+    var myobj = new Object();
+
+    // Get the modal
+    var modal = document.getElementById('LotDetailsDIV');
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    $(document).ready(function () {
+
+        $("#srch-term").keypress(function (e) {
+            if (e.which == 13) {
+               // alert('You pressed enter!');
+                e.preventDefault();
+                $("#btnsrch").click();
+            }
+        });
+
+
+        $("#btnsrch").click(function () {
+            if ($('#srch-term').val() != "") {
+               document.getElementById('srch_list').innerHTML = "";
+                $("#srch_list").show();
+                //var Stext = $('#srch-term').val();
+                //srch = Stext.trim();
+                var srchobj = new Object();
+                
+                srchobj.StreetName = $('[name="srch-term"]').val();
+                srchobj.Zip_Code = $('[name="srch-term"]').val();
+                srchobj.Score = $('[name="srch-term"]').val();
+
+                $.get("@Url.Action("Find", "Filter")", { str: JSON.stringify(srchobj) }, function (data) {
+
+                        var prd = "";
+                        myobj = JSON.parse(data);
+
+                    if (myobj.length != 0) {
+
+
+                        for (j = 0; j < myobj.length; j++) {
+
+
+                            if (myobj[j].Score != null)
+                                prd += "<p onclick=showpopup(" + myobj[j].Lot_ID + ")><a href=' # '>" + myobj[j].StreetName + '--' + myobj[j].Zip_Code + '--' + myobj[j].Score + "</a></p><br/>"
+
+                            else
+                              prd += "<p onclick=showpopup(" + myobj[j].Lot_ID + ")><a href=' # '>" + myobj[j].StreetName + '--' + myobj[j].Zip_Code +'-- No score available at the moment' + "</a></p><br/>"
+                              
+                            $("#srch_list").html(prd);
+
+
+                        }
+                    } else {
+                        DangerAlert("","Not Found");
+                    }
+                });
+
+                 
+            }
+            else {
+               // $("#srch_list").hide();
+                document.getElementById('srch_list').innerHTML = "";
+            }
+        });
+
+
+    });
+
+
+
+
+
+    function showpopup(ID) {
+
+        for (var i = 0; i < myobj.length; i++) {
+            if (myobj[i].Lot_ID == ID) {
+
+                if (myobj[i].Score == null) {
+                    WarningAlert(" No score available at the moment");
+                }
+
+
+                var table = "";
+                table += "<div class='col-4' >";
+                table += "<iframe src='" + myobj[i].Floor_Plan_Path + "' alt='" + myobj[i].Product_Name + "' height='300' width='280'></iframe>";
+                table += "</div>";
+                table += "<div class='col-8'>";
+                table += "<table class='table no-border' padding-right='5px' >";
+                table += "<tbody>";
+                if (myobj[i].Lot_Name != null) {
+                    table += "<tr>";
+                    table += "<td width='60%' style='text-align:left;'><b>Lot/House Name : </b></td>";
+                    table += "<td style='text-align:left;'>" + myobj[i].Lot_Name + "</td>";
+                    table += "</tr>";
+                }
+                table += "<tr>";
+                if (myobj[i].Status != null) {
+                    table += "<td style='text-align:left;'><b>Status : </b></td>";
+                    table += "<td style='text-align:left;'>" + myobj[i].Status + "</td>";
+                    table += "</tr>";
+
+
+                    if (myobj[i].Status == 'Under Construction') {
+                        table += "<tr>";
+                        table += "<td style='text-align:left;'><b>Expected CompletionDate : </b></td>";
+                        table += "<td style='text-align:left;'>" + SplitDates(myobj[i].Expected_CompletionDate) + "</td>";
+                        table += "</tr>";
+                    } else {
+
+                    }
+                }
+
+
+                table += "<tr>";
+                table += "<td style='text-align:left;'><b>Street Name : </b></td>";
+                table += "<td style='text-align:left;'>" + myobj[i].StreetName + "</td>";
+                table += "</tr>";
+                table += "<tr>";
+                if (myobj[i].Survey_Number != "") {
+                    table += "<td style='text-align:left;'><b>Survey Number : </b></td>";
+                    table += "<td style='text-align:left;'>" + myobj[i].Survey_Number + "</td>";
+                    table += "</tr>";
+                }
+                
+                table += "<tr>";
+                table += "<td style='text-align:left;'><b>Zip Code : </b></td>";
+                table += "<td style='text-align:left;'>" + myobj[i].Zip_Code + "</td>";
+                table += "</tr>";
+                if (myobj[i].Score != null) {
+                    table += "<td style='text-align:left;'><b>AVA Score : </b></td>";
+                    table += "<td style='text-align:left;'>" + myobj[i].Score + "</td>";
+                    table += "</tr>";
+                }
+                table += "</tfoot>";
+                table += "</table>";
+                table += "</div>";
+
+
+            }
+        }
+        $("#Lot_details").html(table);
+        // $("#tbody").html(tbody);
+        // $("#thead").html(thead);
+        modal.style.display = "block";
+    }
+
+    function SplitDates(DatTime) {
+        if (DatTime != null && DatTime != "" && DatTime != "null") {
+            var da = DatTime;
+            d = da.split('T')[0];
+            var day = d.split('-')[2];
+            var month = d.split('-')[1];
+            var year = d.split('-')[0];
+            d = d = da.split('T')[1];
+            da = day + '-' + month + '-' + year;
+            return da;
+        }
+        else
+            return null;
+    }
+
+</script>
+
+
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<!-- jQuery -->
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+
+<!-- DataTables -->
+<script src="~/CustomFiles/plugins/datatables/jquery.dataTables.js"></script>
+<script src="~/CustomFiles/plugins/datatables/dataTables.bootstrap4.js"></script>
+<script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+<script src="~/CustomFiles/js/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="~/CustomFiles/js/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="~/CustomFiles/js/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+<script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+
+
+@*<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>*@
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+
+
+
+<!-- Bootstrap 4 -->
+<script src="~/CustomFiles/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="~/CustomFiles/plugins/select2/select2.full.min.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+<script src="~/CustomFiles/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="~/CustomFiles/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="~/CustomFiles/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="~/CustomFiles/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="~/CustomFiles/plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="~/CustomFiles/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="~/CustomFiles/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="~/CustomFiles/dist/js/demo.js"></script>
+<!--Toastr Min-->
+<script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+<link href="~/CustomFiles/dist/css/loader.css" rel="stylesheet" />
+<script>
+    // setTimeout(function () { $('body').css('zoom', '90%') }, 2000);
+    $(function () {
+        //  $('body').css('zoom', '92%');
+    });
+    $('#loader-wrapper').css('display', 'none');
+    $(document).ajaxStart(function () {
+        $('#loader-wrapper').css('display', 'block');
+    }).ajaxStop(function () {
+        $('#loader-wrapper').css('display', 'none');
+    });
+
+
+    $(function () {
+
+        CloseCard();
+    });
+    function OpenCard() {
+        $('#carddiv').removeClass('collapsed-card');
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+        $('.fa-plus').addClass('fa-minus').removeClass('fa-plus')
+    }
+    function CloseCard() {
+        $('#carddiv').addClass('collapsed-card');
+        $('.fa-minus').addClass('fa-plus').removeClass('fa-minus')
+    }
+    function SuccessAlert(Title, Message) {
+        toastr.success(Message, Title)
+    }
+    function WarningAlert(Title, Message) {
+        toastr.warning(Message, Title)
+    }
+    function DangerAlert(Title, Message) {
+        toastr.error(Message, Title)
+    }
+
+</script>
+

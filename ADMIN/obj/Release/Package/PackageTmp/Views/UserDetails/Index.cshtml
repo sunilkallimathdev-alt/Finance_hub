@@ -1,0 +1,459 @@
+﻿
+@{
+    ViewBag.Title = "User Details";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>User Details</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">DataTables</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <!-- /.card-header -->
+                    <div class="card">
+                        <div class="col-12">
+                            <div class="card-header">
+
+                                <div>
+                                    <div class="row" style="padding: 5px; !important; text-align: right !important;">
+                                        <div class="col-lg-4">
+                                            <label for="exampleInputBranch" style="text-align: right !important;">Select Showroom</label>
+                                        </div>
+
+                                        <div class="col-lg-3 col-6">
+                                            <select name="Showroom" id="Showroom" class="form-control">
+                                                <option value="0"> All </option>
+                                                <option value="1">Srinath Motors</option>
+                                                <option value="2">Sathya Motors</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- /.card-header -->
+
+                        <div class="card-body">
+                            <div id="buttons"></div>
+                            <table id="tbl" class="table table-bordered table-striped" style="width:100%"></table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+
+<div class="container modal col-12" id="UserDetailsModal">
+    <div class="card card-secondary modal-content">
+
+        <div class="modal-header">
+            <h4 class="modal-title">Loan Details</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btnClose">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+
+            <section class="content" style="margin-top:12px">
+                <div class="container-fluid" id="dvHirerDetails">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <label> Name : </label>  <label id="HName"> </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label> Vehicle Number : </label>  <label id="VNo"> </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label>Mobile Number : </label>  <label id="HMNo"> </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label>Vehicle Name : </label>  <label id="HVName"> </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <label>Loan Amount : </label>  <label id="HLoanAmt"> </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label>Pending Amount : </label>  <label id="HPendAmt"> </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label>Status : </label>  <label id="HStatus"> </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            @*<label>Mobile Number :</label><label id="HMobNum"> </label>*@
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img id="imgHirer" height="100px" width="100px" class="Image">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid" id="dvLoanHistory">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+
+                                <!-- /.card-header -->
+                                <div class="card">
+                                    <!-- /.card-header -->
+
+                                    <div class="card-body">
+                                        <table id="example1" class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>EMI Amount</th>
+                                                    <th>Month-Year</th>
+                                                    <th>Penalty Amount</th>
+                                                    <th>Total Amount</th>
+                                                    <th>Paid Date</th>
+                                                    <th>Paid Amount</th>
+                                                    <th>Pending Amount</th>
+                                                    <th>Received-By</th>
+
+                                                </tr>
+                                            </thead>
+
+                                            <tbody id="tbody"></tbody>
+
+                                            <tfoot>
+
+                                            </tfoot>
+                                        </table>
+                                    </div>
+
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+
+        </div>
+        <div class="modal-footer justify-content-between">
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000000; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        /*padding: 20px;*/
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+
+
+
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="~/CustomFiles/js/Common_js.js"></script>
+<script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+
+<script>
+
+    var tableId = "tbl";
+    var modal2 = document.getElementById('UserDetailsModal');
+
+    // When the user clicks anywhere outside of the modal, close it
+    //window.onclick = function (event) {
+    //    modal2.style.display = "block";
+    //}
+        //if (event.target === modal2) {
+        //    modal.style.display = "none";
+        //} else {
+        //    modal2.style.display = "none";
+
+        //}
+
+
+    $(document).ready(function () {
+
+        BindTableData();
+
+        $('#btnClose').click(function () {
+            modal2.style.display = "none";
+        });
+
+        $('#Showroom').change(function () {
+            BindTableData();
+            //if ($('#RoleID').val() != 'select')
+            //    GetRolePages();
+            //else
+            //    $('#TableDiv').hide();
+        });
+
+        $("#btnSearch").click(function () {
+
+            $("#dvHirerDetails").hide();
+            $("#dvLoanHistory").hide();
+            $("#HirAmt").hide();
+            $("#btnSave").hide();
+
+            var objSearch = new Object();
+            objSearch.SearchKey = $('[name="searchKey"]').val();
+
+            $.post("@Url.Action("GetHirerDetails", "LoanHistory")", { objHirer: JSON.stringify(objSearch) }, function (data) {
+                var Res = JSON.parse(data);
+                if (Res != null) {
+
+                    $("#dvHirerDetails").show();
+                    $("#dvLoanHistory").show();
+                    $("#HirAmt").show();
+                    $("#btnSave").show();
+
+                    //ClearFields();
+                    BindHirerDetails(Res);
+                    BindHirerLoanHistData(Res);
+                }
+                else {
+                    WarningAlert("", "No matching data");
+                }
+
+            });
+        });
+
+    });
+
+
+    function BindTableData() {
+        var objUsrDet = new Object();
+        objUsrDet.BranchID = $('#Showroom').val();
+        $.post("@Url.Action("GetUserDetails", "UserDetails")", { ObjReg: JSON.stringify(objUsrDet) }, function (data) {
+                var myObject = JSON.parse(data);
+                var TableData = [];
+                for (var i = 0; i < myObject.length; i++) {
+                    var row = [];
+                    row.push(myObject[i].BranchName);
+                    if (myObject[i].PaidStatus == "Nodue") {
+                        row.push("<span class='badge bg-success float-right'>" + myObject[i].HirerName + "</span>");
+                    }
+                    else if (myObject[i].PaidStatus == "due") {
+                        row.push("<span class='badge bg-warning float-right'>" + myObject[i].HirerName + "</span>");
+                    }
+                    else if(myObject[i].PaidStatus == "defaulter"){
+                        row.push("<span class='badge bg-danger float-right'>" + myObject[i].HirerName + "</span>");
+                    }
+                    //row.push(myObject[i].HirerName);
+                    row.push("<a href=tel:" + myObject[i].MobileNumber + ">" + myObject[i].HirerMobileNumber + "</a>");
+                    row.push(myObject[i].VehicleNo);
+                    row.push(myObject[i].TotalLoanAmount);
+                    row.push(myObject[i].TotalPendingAmount);
+
+
+                    //if (myObject[i].IsActive)
+                    //    row.push("<span class='badge bg-success float-right'>Active</span>");
+                    //else
+                    //    row.push("<span class='badge bg-danger float-right'>InActive</span>");
+
+                    row.push('<button type="button" class="btn btn-info btn-sm edit"  onclick="GetData(' + myObject[i].HirerId + ')">View</button>');
+                    //row.push('<button type="button" class="btn btn-danger btn-sm delete"  onclick="DeleteData(' + myObject[i].UserID + ')">Delete</button>');
+                    TableData.push(row);
+                }
+
+            $('#' + tableId).DataTable({
+                destroy: true,
+                data: TableData,
+                scrollX: true,
+                columns: [
+                    { title: "Branch" },
+                    { title: "Name" },
+                    { title: "Mobile Number" },
+                    { title: "Vehicle No." },
+                    { title: "Loan Amount" },
+                    { title: "Pending Amount" },
+                    //{ title: "IsActive " },
+                    { title: "View Details" },
+                ],
+                   aoColumnDefs: [
+                    {
+                        //bSortable: false,
+                        //aTargets: [-1, -2]
+                    }
+
+                ]
+            });
+
+            //hideshowbuttons();
+                var buttons = new $.fn.dataTable.Buttons($('#' + tableId).DataTable(), {
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5'
+                ]
+            }).container().appendTo($('#buttons'));
+                $('.buttons-html5').addClass('btn btn-default btn-sm');
+            });
+
+            //hideshowbuttons();
+    }
+
+    function BindHirerDetails(myObject) {
+
+        $('#HName').html(myObject.HirerName);
+        $('#VNo').html(myObject.VehicleNo);
+        $('#HMNo').html(myObject.HirerMobileNumber);
+        $('#HVName').html(myObject.VehicleName);
+
+        $('#HLoanAmt').html(myObject.TotalLoanAmount);
+        $('#HPendAmt').html(myObject.TotalPendingAmount);
+        $('#HStatus').html(myObject.PaidStatus);
+
+        $("#imgHirer").attr("src", myObject.HirerPhoto);
+    }
+
+    function GetData(ID) {
+
+        modal2.style.display = "block";
+
+        var objHirerDet = new Object();
+        objHirerDet.HirerID = ID;
+
+        $.post("@Url.Action("GetHirerDetailsByHirerID", "LoanHistory")", { objHirer: JSON.stringify(objHirerDet) }, function (data) {
+
+            var Res = JSON.parse(data);
+            if (Res != null) {
+
+                BindHirerDetails(Res);
+            }
+        });
+
+
+        $.post("@Url.Action("GetLoanHistory", "LoanHistory")", { ObjLoanHistory: JSON.stringify(objHirerDet) }, function (data) {
+                var myObject = JSON.parse(data);
+                var String = "";
+
+                if (myObject.length > 0) {
+                    for (var i = 0; i < myObject.length; i++) {
+
+                        String = String + "<tr>";
+                        String = String + "<td>" + (i + 1) + "</td>";
+                        String = String + "<td>" + myObject[i].EMIAmount + "</td>";
+                        String = String + "<td>" + myObject[i].Month_Year + "</td>";
+                        String = String + "<td>" + myObject[i].PenaltyAmount + "</td>";
+                        String = String + "<td>" + myObject[i].TotalAmount + "</td>";
+                        String = String + "<td>" + myObject[i].PaidDate + "</td>";
+                        String = String + "<td>" + myObject[i].PaidAmount + "</td>";
+                        String = String + "<td>" + myObject[i].PendingAmount + "</td>";
+                        String = String + "<td>" + myObject[i].ReceivedBy + "</td>";
+                        String = String + "</tr>";
+                    }
+                }
+                else {
+                    String = String + "<tr>";
+                    String = String + "<td colspan='9'> No data </td>";
+                    String = String + "</tr>";
+                }
+
+                $('#tbody').html(String);
+            });
+
+    }
+
+
+</script>
+

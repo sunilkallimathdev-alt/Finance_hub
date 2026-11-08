@@ -1,0 +1,365 @@
+﻿
+@{
+    ViewBag.Title = "User";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">@ViewBag.Title</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Dashboard/Welcome">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <form id="formadminuser">
+            <div class="card card-info" id="carddiv">
+                <div class="card-header" data-widget="collapse" style="cursor:pointer">
+                    <h3 class="card-title">Add @ViewBag.Title</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Role Name<span style="color:red">*</span></label>
+                                <select name="RoleID" class="form-control ">
+                                    <option value="">---Select--- </option>
+                                    @{
+                                        var RoleList = (List<API.Models.Role_Model>)ViewBag.RoleList;
+                                        foreach (var cat in RoleList)
+                                        {
+                                            <option value="@cat.RoleID">@cat.RoleName </option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        @*<div class="col-md-3">
+                            <div class="form-group">
+                                <label>Store Name<span style="color:red">*</span></label>
+                                <select name="StoreID" class="form-control ">
+                                    <option value="">---All--- </option>
+                                    @{
+                                        var StoreList = (List<API.Models.Store_Model>)ViewBag.StoreList;
+                                        foreach (var cat in StoreList)
+                                        {
+                                            <option value="@cat.StoreID">@cat.StoreName </option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>*@
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>User Name<span style="color:red">*</span></label>
+                                <input class="form-control" type="text" name="UserName" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Mobile Number<span style="color:red">*</span></label>
+                                <input class="form-control" type="text" name="MobileNumber" maxlength="10" onkeypress="return IsNumeric(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+
+                                <label>EmailID<span style="color:red">*</span></label>
+                                <input class="form-control" type="text" name="EmailID" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Password<span style="color:red">*</span></label>
+                                <input class="form-control" type="password" name="Password" maxlength="20" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <textarea class="form-control" type="text" name="Address" maxlength="700" onkeypress="return NotanHTML(event)"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Status<span style="color:red">*</span></label>
+                                <select class="form-control" name="IsActive">
+                                    <option value="true">Active</option>
+                                    <option value="false">InActive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-success" id="btnadd">Add @ViewBag.Title</button>
+                    <button type="button" class="btn btn-warning" id="btnupdate">Update @ViewBag.Title</button>
+                    <button type="button" class="btn btn-danger"  onclick="ClearFields()" id="btnreset">Cancel</button>
+                    <input type="hidden" name="HDID" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">@ViewBag.Title List</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <div id="buttons"></div>
+            <table id="tbl" class="table table-bordered table-striped" style="width:100%"></table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="~/CustomFiles/js/Common_js.js"></script>
+    <script>
+
+        var tableId = "tbl";
+
+        $('#formadminuser').validate({
+            rules: {
+                UserName: {
+                    required: true,
+                },
+                MobileNumber: {
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 15,
+                    required: true,
+                },
+                EmailID: {
+                    email: true,
+                    required: true,
+                },
+                Address: {
+                    required: false,
+                },
+                RoleID: {
+                    required: true,
+                },
+                Password: {
+                    minlength: 8,
+                    required: true,
+                },
+
+
+            }
+        });
+
+        var form = $("#formadminuser");
+        form.validate();
+
+        $(document).ready(function () {
+            BindTableData();
+            hideshowbuttons();
+            $('#btnupdate').hide();
+            $("#btnadd").click(function () {
+                if (form.valid()) {
+                    var myobj = new Object();
+                    myobj.RoleID = $('[name="RoleID"]').val();
+                    myobj.UserName = $('[name="UserName"]').val();
+                    myobj.MobileNumber = $('[name="MobileNumber"]').val();
+                    myobj.EmailID = $('[name="EmailID"]').val();
+                    myobj.Password = $('[name="Password"]').val();
+                    myobj.Address = $('[name="Address"]').val();
+                    myobj.StoreID = $('[name="StoreID"]').val();
+                    myobj.City = $('[name="City"]').val();
+                    myobj.State = $('[name="State"]').val();
+                    myobj.Country = $('[name="Country"]').val();
+                    myobj.PinCode = $('[name="PinCode"]').val();
+                    myobj.IsActive = $('[name="IsActive"]').val();
+                    $.post("@Url.Action("AddAdminUser", "AdminUser")", { ObjAdminUser: JSON.stringify(myobj) }, function (data) {
+                        var Res = JSON.parse(data);
+                        if (Res.StatusCode == 200) {
+                            SuccessAlert("@ViewBag.Title", "Added Successfully.");
+                            ClearFields();
+                            BindTableData();
+                        }
+                        else
+                            WarningAlert("@ViewBag.Title", Res.Message);
+                    });
+                }
+                else {
+                    DangerAlert(" ", "Recheck the fields.");
+                }
+
+            });
+
+
+
+            $("#btnupdate").click(function () {
+                if (form.valid()) {
+                    var myobj = new Object();
+                    myobj.UserID = $('[name="HDID"]').val();
+                    myobj.RoleID = $('[name="RoleID"]').val();
+                    myobj.UserName = $('[name="UserName"]').val();
+                    myobj.MobileNumber = $('[name="MobileNumber"]').val();
+                    myobj.EmailID = $('[name="EmailID"]').val();
+                    myobj.Password = $('[name="Password"]').val();
+                    myobj.Address = $('[name="Address"]').val();
+                    myobj.StoreID = $('[name="StoreID"]').val();
+                    myobj.City = $('[name="City"]').val();
+                    myobj.State = $('[name="State"]').val();
+                    myobj.Country = $('[name="Country"]').val();
+                    myobj.PinCode = $('[name="PinCode"]').val();
+                    myobj.IsActive = $('[name="IsActive"]').val();
+
+                    $.post("@Url.Action("UpdateAdminUser", "AdminUser")", { ObjAdminUser: JSON.stringify(myobj) }, function (data) {
+                        var Res = JSON.parse(data);
+                        if (Res.StatusCode == 200) {
+                            SuccessAlert("@ViewBag.Title", "Updated Successfully.");
+                            BindTableData();
+                            $('#btnupdate').hide();
+                           
+                            ClearFields();
+                        }
+                        else
+                            WarningAlert("@ViewBag.Title", Res.Message);
+                    });
+                }
+                else {
+                    DangerAlert(" ", "Recheck the fields.");
+                }
+
+               
+
+            });
+        });
+
+        function GetData(UserID) {
+            $.get("@Url.Action("GetAdminUser", "AdminUser")", { UserID: UserID }, function (data) {
+                ClearFields();
+                var myobj = JSON.parse(data);
+                if (myobj.ObjectResult != null) {
+                    $('[name="HDID"]').val(myobj.ObjectResult.UserID);
+                    $('[name="RoleID"]').val(myobj.ObjectResult.RoleID);
+                    $('[name="UserName"]').val(myobj.ObjectResult.UserName);
+                    $('[name="MobileNumber"]').val(myobj.ObjectResult.MobileNumber);
+                    $('[name="EmailID"]').val(myobj.ObjectResult.EmailID);
+                    $('[name="Password"]').val(myobj.ObjectResult.Password);
+                    $('[name="Address"]').val(myobj.ObjectResult.Address);
+                    $('[name="StoreID"]').val(myobj.ObjectResult.StoreID);
+                    $('[name="City"]').val(myobj.ObjectResult.City);
+                    $('[name="State"]').val(myobj.ObjectResult.State);
+                    $('[name="Country"]').val(myobj.ObjectResult.Country);
+                    $('[name="PinCode"]').val(myobj.ObjectResult.PinCode);
+                    if (myobj.ObjectResult.IsActive)
+                        $('[name="IsActive"]').val("true");
+                    else
+                        $('[name="IsActive"]').val("false");
+                    $("#btnadd").hide();
+                    $('#btnupdate').show();
+                    OpenCard();
+                }
+            });
+        }
+
+        function DeleteData(UserID) {
+            var alert = confirm("Are you sure want to Delete?");
+            if (alert) {
+                $.post("@Url.Action("DeleteAdminUser", "AdminUser")", { UserID: UserID }, function (data) {
+                    var myobj = JSON.parse(data);
+                    if (myobj.StatusCode == 200)
+                        SuccessAlert("@ViewBag.Title", "Deleted Successfully.");
+                    else
+                        WarningAlert("@ViewBag.Title", myobj.Message);
+                    BindTableData();
+                });
+            }
+        }
+       function ClearFields() {
+            $('[name="HDID"]').val(null);
+           $('[name="UserName"]').val(null);
+            $('[name="MobileNumber"]').val(null);
+            $('[name="EmailID"]').val(null);
+            $('[name="RoleID"]').val("");
+            $('[name="StoreID"]').val("");
+            $('[name="Address"]').val(null);
+            $('[name="City"]').val(null);
+           $('[name="State"]').val(null);
+           $('[name="Password"]').val(null);
+            $('[name="Country"]').val(null);
+            $('[name="PinCode"]').val(null);
+            $('[name="IsActive"]').val('true');
+            $('.error').html("");
+            $("#btnadd").show();
+            $('#btnupdate').hide();
+        }
+
+
+        function BindTableData() {
+
+            $.get("@Url.Action("GetAdminUserList", "AdminUser")", function (data) {
+                var myObject = JSON.parse(data);
+            var TableDate = [];
+            for (var i = 0; i < myObject.length; i++) {
+                var row = [];
+                row.push(myObject[i].UserName);
+                row.push(myObject[i].RoleName);
+                row.push(myObject[i].StoreName);
+                row.push("<a href=tel:" + myObject[i].MobileNumber + ">" + myObject[i].MobileNumber + "</a>");
+                row.push("<a href=mailto:" + myObject[i].EmailID + ">" + myObject[i].EmailID + "</a>");
+
+                if (myObject[i].IsActive)
+                    row.push("<span class='badge bg-success float-right'>Active</span>");
+                else
+                    row.push("<span class='badge bg-danger float-right'>InActive</span>");
+
+                row.push('<button type="button" class="btn btn-info btn-sm edit"  onclick="GetData(' + myObject[i].UserID + ')">Edit</button>');
+                row.push('<button type="button" class="btn btn-danger btn-sm delete"  onclick="DeleteData(' + myObject[i].UserID + ')">Delete</button>');
+                TableDate.push(row);
+            }
+            $('#' + tableId).DataTable({
+                destroy: true,
+                data: TableDate,
+                scrollX: true,
+                columns: [
+                    { title: "UserNames" },
+                    { title: "Role" },
+                    { title: "Store" },
+                    { title: "MobileNumber" },
+                    { title: "EmailID" },
+                    { title: "IsActive " },
+                    { title: " " },
+                    { title: " " },
+                ]
+            });
+            hideshowbuttons();
+                var buttons = new $.fn.dataTable.Buttons($('#' + tableId).DataTable(), {
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5'
+
+                ]
+            }).container().appendTo($('#buttons'));
+                $('.buttons-html5').addClass('btn btn-default btn-sm');
+            });
+
+           
+        }
+
+    </script>
+</section>
+
+
+
+
+

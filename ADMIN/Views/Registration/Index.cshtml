@@ -1,0 +1,550 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<!-- Main content -->
+
+<div class="content-header">
+    <div class="card-header">
+        <h1 class="card-title">Vehicle Loan Application</h1>
+    </div>
+</div>
+
+<div class="col-lg-12 col-6">
+    <!-- small box -->
+
+
+
+    <div>
+        <div class="row" style="padding: 5px; !important; text-align: right !important;">
+            <div class="col-lg-4">
+                <label for="exampleInputBranch" style="text-align: right !important;">Select Showroom</label>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <select name="Showroom" id="Showroom" class="form-control">
+                    <option value="0">-- Select --</option>
+                    <option value="1">Srinath Motors</option>
+                    <option value="2">Sathya Motors</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Hirer -->
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="card card-primary">
+
+            <div class="card-header">
+                <h3 class="card-title">Hirer</h3>
+            </div>
+
+            <form>
+
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="HName" class="form-control" placeholder="Enter Hirer Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Father Name</label>
+                                <input type="text" name="HFName" class="form-control" placeholder="Enter Your Father ame">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-5 col-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="number" name="HAge" required min="18" max="100" class="form-control"
+                                       placeholder="Enter Your Age">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <!-- radio -->
+
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <input class="form-check-input" type="radio" name="HGender" value="Male">
+                                                <label class="form-check-label">Male</label>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <input class="form-check-input" type="radio" name="HGender" value="Female">
+                                                <label class="form-check-label">Female</label>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input class="form-check-input" type="radio" name="HGender" value="Others">
+                                                <label class="form-check-label">Others</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Occupation</label>
+                                <input type="text" name="HOccupation" class="form-control" placeholder="Enter Your Occupation">
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label for="Number">Mobile Number</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-mobile"></i></span>
+                                    </div>
+                                    <input type="Number" name="HMobNumber" class="form-control" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <label>Aadhar Number</label>
+                                <input type="number" name="HAadharNo" class="form-control" required placeholder="Enter Aadhar Number">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-5">
+
+                            <label> Photo Hirer</label>
+                            <input type="file" name="HPhoto" accept="image/*" onchange="loadFile(event)">
+                            <img id="output" / height="100px" width="100px" class="Image">
+                        </div>
+
+
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <textarea class="form-control" name="HAddress" id="inputAddress" required placeholder="Enter Your Address..."
+                                          rows="7"></textarea>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<!-- Guarantor -->
+<div class="container-fluid">
+
+
+    <div class="col-md-12">
+        <div class="card card-primary">
+
+            <div class="card-header">
+                <h3 class="card-title">Guarantor</h3>
+            </div>
+
+            <form>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Guarantor Name</label>
+                                <input type="text" name="GName" class="form-control" placeholder="Enter Your Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Father Name</label>
+                                <input type="text" name="GFName" class="form-control" placeholder="Enter Your Father ame">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="number" name="GAge" required min="18" max="100" class="form-control"
+                                       placeholder="Enter Your Age">
+                            </div>
+                        </div>
+                        <!--Gender-->
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <!-- radio -->
+
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <input class="form-check-input" type="radio" name="GGender" value="Male">
+                                                <label class="form-check-label">Male</label>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <input class="form-check-input" type="radio" name="GGender" value="Female">
+                                                <label class="form-check-label">Female</label>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input class="form-check-input" type="radio" name="GGender" value="Others">
+                                                <label class="form-check-label">Others</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label for="Number">Mobile Number</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-mobile"></i></span>
+                                    </div>
+                                    <input type="Number" class="form-control" name="GMobNumber" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Aadhar Number</label>
+                                <input type="number" name="GAadharNo" class="form-control" required placeholder="Enter Aadhar Number">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label> Photo Guarantor</label><br>
+                                <input type="file" name="GPhoto" accept="image/*" onchange="loadFile2(event)">
+                                <img id="output2" / height="100px" width="100px" class="Image">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <textarea class="form-control" name="HAddress" id="inputAddress" required placeholder="Enter Your Address..."
+                                          rows="7"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- Vehicle Details -->
+<div class="col-md-12">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Vehicle Details</h3>
+        </div>
+
+        <form>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Vehicle</label>
+                            <input type="text" name="VName" class="form-control" placeholder="Enter Vehicle Name">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Engine No</label>
+                            <input type="text" name="VEngineNo" class="form-control" placeholder="Enter Engine No">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Chassis No</label>
+                            <input type="text" name="VChasisNo" class="form-control" placeholder="Chassis No">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Model</label>
+                            <input type="text" name="VModel" class="form-control" placeholder="Enter Model">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Key No</label>
+                            <input type="text" name="VKeyNo" class="form-control" placeholder="Enter Key No">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Vehicle No</label>
+                            <input type="text" name="VNo" class="form-control" placeholder="Enter Vehicle No">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Vehicle On-Road Rs</label>
+                            <input type="text" name="VOnRoad" class="form-control" placeholder="Enter Vehicle On-Road Rs">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label> Vehicle Photo</label><br>
+                            <input type="file" name="VPhoto" accept="image/*" onchange="loadFile2(event)">
+                            <img id="output2" / height="100px" width="100px" class="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Loan Details-->
+<div class="col-md-12">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Loan Details</h3>
+        </div>
+
+        <form>
+
+            <div class="card-body">
+                <div class="row">
+                    @*<div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Number</label>
+                                <input type="text" name="VNumber" class="form-control" placeholder="Enter Vehicle Number">
+                            </div>
+                        </div>*@
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Loan Date</label>
+                            <input type="date" name="VLoanDate" class="form-control" placeholder="Select Date">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Required Loan Amount</label>
+                            <input type="text" name="VReqLoan" class="form-control" placeholder="Enter Required Loan Rs">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Finance Amount</label>
+                            <input type="text" name="VFinance" id="txtVFinance" class="form-control" placeholder="Enter Finance Rs" onkeyup="CalculateEMIAmount();">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Rate Of Interest</label>
+                            <input type="text" name="VROI" id="txtVROI" class="form-control" placeholder="Enter Rate Of Interest" onkeyup="CalculateEMIAmount();">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Period</label>
+                            <input type="text" name="VPeriod" id="txtVPeriod" class="form-control" placeholder="Enter Period" onkeyup="CalculateEMIAmount();">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Installment Amount</label>
+                            <input type="text" name="VInstallment" id="txtVInstallment" class="form-control" disabled="disabled">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Visibility</label>
+                            <input type="checkbox" name="LoanVisibility" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="width:90%; padding:30px 30px;">
+    <div class="row">
+        <div class="col-sm-2">
+            <button type="button" id="btnSave" class="btn btn-success btn-block ">Save</button>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" id="Cancel" class="btn btn-primary btn-block ">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="~/CustomFiles/js/Common_js.js"></script>
+<script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+<script>
+        //function SuccessAlert(Title, Message) {
+        //    toastr.success(Message, Title)
+        //}
+        //function WarningAlert(Title, Message) {
+        //    toastr.warning(Message, Title)
+        //}
+        //function DangerAlert(Title, Message) {
+        //    toastr.error(Message, Title)
+        //}
+
+        //$('#login').validate({
+        //    rules: {
+        //        UserName: {
+        //            required: true,
+        //        },
+        //        Password: {
+        //            required: true,
+        //        },
+        //    }
+        //});
+
+        //var form = $("#login");
+        //form.validate();
+
+        $(document).ready(function () {
+            //$('[name="UserName"]').val(localStorage.getItem('UserName'));
+            $("#btnSave").click(function () {
+                //if (form.valid()) {
+                document.getElementById("btnSave").disabled = true;
+
+                var myobj = new Object();
+
+                myobj.BranchID = $('#Showroom').val();
+                //Hirer
+                myobj.HirerName = $('[name="HName"]').val();
+                myobj.HirerFathername = $('[name="HFName"]').val();
+                myobj.HirerAge = $('[name="HAge"]').val();
+                myobj.HirerOccupation = $('[name="HOccupation"]').val();
+                myobj.HirerMobileNumber = $('[name="HMobNumber"]').val();
+                myobj.HirerAddress = $('[name="HAddress"]').val();
+                myobj.HirerGender = $('input[name="HGender"]:checked').val();
+                myobj.HirerAadharNumber = $('[name="HAadharNo"]').val();
+
+                //Guarantor
+                myobj.GuarantorName = $('[name="GName"]').val();
+                myobj.GuarantorFathername = $('[name="GFName"]').val();
+                myobj.GuarantorAge = $('[name="GAge"]').val();
+                myobj.GuarantorMobileNumber = $('[name="GMobNumber"]').val();
+                myobj.GuarantorAddress = $('[name="GAddress"]').val();
+                myobj.GuarantorGender = $('input[name="GGender"]:checked').val();
+                myobj.GuarantorAadharNumber = $('[name="GAadharNo"]').val();
+
+                // vehicle
+                myobj.VehicleName = $('[name="VName"]').val();
+                myobj.EngineNo = $('[name="VEngineNo"]').val();
+                myobj.ChassisNo = $('[name="VChasisNo"]').val();
+                myobj.Model = $('[name="VModel"]').val();
+                myobj.KeyNo = $('[name="VKeyNo"]').val();
+                myobj.VehicleNo = $('[name="VNo"]').val();
+                myobj.VehicleOnRoadRs = $('[name="VOnRoad"]').val();
+
+
+                //Loan
+                myobj.LoanDate = $('[name="VLoanDate"]').val();
+                myobj.FinanceRs = $('[name="VFinance"]').val();
+                myobj.Interest = $('[name="VROI"]').val();
+                myobj.Period = $('[name="VPeriod"]').val();
+                myobj.Installment = $('[name="VInstallment"]').val();
+                myobj.RequiredLoanRs = $('[name="VReqLoan"]').val();
+                myobj.LoanVisibility = $('[name="VReqLoan"]').val();
+                myobj.LoanVisibility = $("#LoanVisibility").attr("checked") ? true : false; //$('[name="LoanVisibility"]').val();
+
+
+                //myobj.HirerPhoto = $('[name="HPhoto"]').val();
+                //myobj.GuarantorPhoto = $('[name="HPhoto"]').val();
+                //myobj.VehiclePhoto = $('[name="HPhoto"]').val();
+
+
+                $.post("@Url.Action("SaveRegistration", "Registration")", { ObjRegister: JSON.stringify(myobj) }, function (data) {
+                    var Res = JSON.parse(data);
+                   // alert(Res);
+                    //if (Res.StatusCode == 200) {
+                     var Res = JSON.parse(data);
+                    if (Res > 0) {
+                        SuccessAlert("@ViewBag.Title", "Added Successfully.");
+                        //ClearFields();
+                        //BindTableData();
+                    }
+                    else {
+                        WarningAlert("@ViewBag.Title", "Not Saved. Some issue");
+                    }
+
+                    });
+            });
+        });
+
+
+
+    function CalculateEMIAmount() {
+
+        var LoanAmount = document.getElementById("txtVFinance").value;
+        var InterestRate = document.getElementById("txtVROI").value;
+        var PaymentPeriods = document.getElementById("txtVPeriod").value;
+
+        if (LoanAmount != null && InterestRate != null && PaymentPeriods != null && LoanAmount != undefined && InterestRate != undefined && PaymentPeriods != undefined && LoanAmount != "" && InterestRate != "" && PaymentPeriods != "" && PaymentPeriods != "0") {
+
+            var InterestAmount = (((LoanAmount * InterestRate) / 100) / 12) * PaymentPeriods;
+            var TotalAmount = parseInt(InterestAmount) + parseInt(LoanAmount);
+            var EMIAmt = Math.round(TotalAmount / PaymentPeriods);
+            $('#txtVInstallment').val(EMIAmt);
+
+        }
+        else {
+            $('#txtVInstallment').val("");
+        }
+    }
+
+
+</script>

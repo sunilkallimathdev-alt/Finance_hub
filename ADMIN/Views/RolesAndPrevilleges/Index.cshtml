@@ -1,0 +1,296 @@
+﻿
+@{
+    ViewBag.Title = "Roles And Privileges";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">@ViewBag.Title</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Dashboard/Welcome">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <form id="formadminuser">
+            <div class="card card-info" id="cardiv">
+                <div class="card-header" data-widget="collapse" style="cursor:pointer">
+                    <h3 class="card-title">Add @ViewBag.Title</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool"><i id="plus" class="fa"></i></button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Role Name<span style="color:red">*</span></label>
+                                <select name="RoleID" id="RoleID" class="form-control">
+                                    <option value="">---Select--- </option>
+                                    @{
+                                        var RoleList = (List<API.Models.Role_Model>)ViewBag.RoleList;
+                                        foreach (var cat in RoleList)
+                                        {
+                                            <option value="@cat.RoleID">@cat.RoleName </option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-footer">
+                    @*<button type="button" class="btn btn-success" id="btnadd">Add @ViewBag.Title</button>*@
+                    @*<button type="button" class="btn btn-warning" id="btnupdate">Update @ViewBag.Title</button>*@
+                    <button type="button" class="btn btn-danger" onclick="ClearFields()" id="btnreset">Reset</button>
+                    <input type="hidden" name="HDID" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card" id="TableDiv">
+        <div class="card-header">
+            <h3 class="card-title">Permission Table</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <div id="buttons"></div>
+            <input type="checkbox"  id="checkAll">Check All
+            <table id="tbl" class="table table-bordered table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Pages</th>
+                        <th>
+                            <input type="checkbox" style="margin: 3px;" checked="checked" name="radios" disabled="disabled" />
+                            View /
+                            <input type="checkbox" style="margin: 3px;" name="radios" disabled="disabled" />
+                            Block
+                        </th>
+                        <th>Enable Add / Update</th>
+                        <th>Enable Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="~/CustomFiles/js/Common_js.js"></script>
+    <script>
+
+        var tableId = "tbl";
+        var PagesList = [];
+        $('#formadminuser').validate({
+            rules: {
+                RoleID: {
+                    required: true,
+                }
+
+            }
+        });
+
+        var form = $("#formadminuser");
+        form.validate();
+
+        $(document).ready(function () {
+
+           
+
+            Getpagelist();
+            $('#TableDiv').hide();
+            $('#RoleID').change(function () {
+                if ($('#RoleID').val() != 'select')
+                    GetRolePages();
+                else
+                    $('#TableDiv').hide();
+            });
+
+            $("#checkAll").click(function () {
+                $('input:checkbox').not(this).prop('checked', this.checked);
+            });
+
+        });
+
+         function save() {
+                if (form.valid()) {
+                    var SaveRolesObj = [];
+                    for (var i = 0; i < PagesList.length; i++) {
+                        var Priv = new Object();
+                        if ($('#chk' + PagesList[i].PageID).is(":checked")) {
+                            Priv.CategoryID = PagesList[i].CategoryID;
+                            Priv.PageID = PagesList[i].PageID;
+                            Priv.RoleID = $('#RoleID').val();
+                            Priv.isChecked = true;
+                            if ($('#chk' + PagesList[i].PageID).is(":checked"))
+                                Priv.Is_view = true;
+                            else
+                                Priv.Is_view = false;
+                            if ($('#add' + PagesList[i].PageID).is(":checked")) 
+                                Priv.Is_Add_Edit = true;
+                            else
+                                Priv.Is_view = false;
+                            if ($('#delete' + PagesList[i].PageID).is(":checked")) 
+                                Priv.Is_Delete = true;
+                            else
+                                Priv.Is_view = false;
+
+
+
+                        }
+                        else {
+                            Priv.CategoryID = PagesList[i].CategoryID;
+                            Priv.PageID = PagesList[i].PageID;
+                            Priv.RoleID = $('#RoleID').val();
+                            Priv.isChecked = false;
+                        }
+
+                        SaveRolesObj.push(Priv);
+                    }
+
+
+                    $.post("@Url.Action("SaveRole", "RolesAndPrevilleges")", { SaveRolesObj: JSON.stringify(SaveRolesObj) }, function (data) {
+
+
+                            SuccessAlert("@ViewBag.Title", "Updated Successfully.");
+
+                            $('#TableDiv').hide();
+                            //GetRolePages();
+                            ClearFields();
+
+                    });
+                }
+                else {
+                    DangerAlert(" ", "Recheck the fields.");
+                }
+
+
+
+            }
+       function ClearFields() {
+            $('[name="HDID"]').val(null);
+            $('[name="RoleID"]').val("");
+            $('.error').html("");
+            $("#btnadd").show();
+            $('#btnupdate').hide();
+            $('#TableDiv').hide();
+        }
+
+        function Getpagelist() {
+            $.get("@Url.Action("GetPagesList", "RolesAndPrevilleges")", function (data) {
+                var myObject = JSON.parse(data);
+                for (var i = 0; i < myObject.length; i++) {
+                    var obj = {
+                        CategoryID: myObject[i].CategoryID,
+                        CategoryName: myObject[i].CategoryName,
+                        PageID: myObject[i].PageID,
+                        PageName: myObject[i].PageName,
+
+                        //PageName: myObject[i].PageName,
+                        //PageName: myObject[i].PageName,
+                        //PageName: myObject[i].PageName,
+                        //Page_URL: myObject[i].Page_URL,
+                        //Page_URL: myObject[i].Page_URL,
+                        //Page_URL: myObject[i].Page_URL,
+                    }
+                    PagesList.push(obj);
+                }
+            })
+
+        }
+
+         function GetRolePages() {
+            var RoleID = JSON.parse($('#RoleID').val());
+            $.get("@Url.Action("GetRolePages", "RolesAndPrevilleges")", { RoleID: RoleID }, function (data) {
+
+
+                var myObject = JSON.parse(data);
+                var Found = false;
+                var View = false;
+                var AddEdit = false;
+                var Delete = false;
+                var String = "";
+                for (var i = 0; i < PagesList.length; i++) {
+                    String = String + "<tr>";
+                    for (var j = 0; j < myObject.length; j++) {
+                        if (PagesList[i].PageID == myObject[j].PageID) {
+                            Found = true;
+                            if (myObject[j].Is_Add_Edit == true)
+                                AddEdit = true;
+                            if (myObject[j].Is_Delete == true)
+                                Delete = true;
+                            if (myObject[j].Is_view == true)
+                                View = true;
+                            break;
+                        }
+                        else {
+                            Found = false;
+                        }
+                    }
+                    if (Found == true) {
+                        String = String + "<td>" + PagesList[i].CategoryName + "</td>";
+                        String = String + "<td>" + PagesList[i].PageName + "</td>";
+                        String = String + "<td><input id='chk" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' checked='checked' name='radios'/></td>";
+                        //if (myObject[j].Is_view == true)
+                        //    String = String + "<td><input id='view" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' checked='checked' name='radios'/></td>";
+                        //else
+                        //    String = String + "<td><input id='view" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;'  name='radios'/></td>";
+
+                        if (myObject[j].Is_Add_Edit == true)
+                            String = String + "<td><input id='add" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' checked='checked' name='radios'/></td>";
+                        else
+                            String = String + "<td><input id='add" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;'  name='radios'/></td>";
+
+                        if (myObject[j].Is_Delete == true)
+                            String = String + "<td><input id='delete" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' checked='checked' name='radios'/></td>";
+                        else
+                            String = String + "<td><input id='delete" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;'  name='radios'/></td>";
+                    }
+                    else {
+                        String = String + "<td>" + PagesList[i].CategoryName + "</td>";
+                        String = String + "<td>" + PagesList[i].PageName + "</td>";
+                        String = String + "<td><input id='chk" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' name='radios'/></td>";
+                       // String = String + "<td><input id='view" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' name='radios'/></td>";
+                        String = String + "<td><input id='add" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' name='radios'/></td>";
+                        String = String + "<td><input id='delete" + PagesList[i].PageID + "' type='checkbox' style='margin: 3px;' name='radios'/></td>";
+
+                    }
+                    String = String + "</tr>";
+                }
+                String = String + "<tr><td></td><td></td><td></td><td></td><td><input type='button'  id='btnupdate' onclick='save();' value='Save' class='btn btn-success edit' /></td></tr>";
+                $('#tbody').html(String);
+                $('#TableDiv').show();
+
+
+                hideshowbuttons();
+
+               //$('#' + tableId).DataTable({
+               // destroy: true,
+               // data: String,
+               // scrollX: true,
+
+               //});
+
+         });
+        }
+
+    </script>
+</section>
+
+
+
+
+
