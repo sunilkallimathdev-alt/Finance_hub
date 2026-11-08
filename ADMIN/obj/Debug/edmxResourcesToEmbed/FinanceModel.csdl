@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinanceDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="BranchId" />
+    </Key>
+    <Property Name="BranchId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BrannchName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__User__BranchId__1CF15040" FromRole="Branch" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Hirer">
+    <Key>
+      <PropertyRef Name="HirerId" />
+    </Key>
+    <Property Name="HirerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GuarantorName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fathername" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="HirerPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GuarantorPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNumber" Type="Int32" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LoanDetails" Relationship="Self.FK__LoanDetai__Hirer__5FB337D6" FromRole="Hirer" ToRole="LoanDetails" />
+    <NavigationProperty Name="VehicleDetails" Relationship="Self.FK__VehicleDe__Hirer__571DF1D5" FromRole="Hirer" ToRole="VehicleDetails" />
+    <Property Name="HirerName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HirerFathername" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HirerAge" Type="Int32" />
+    <Property Name="HirerOccupation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HirerMobileNumber" Type="Int64" Nullable="false" />
+    <Property Name="HirerAddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="HirerSignature" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GuarantorFathername" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GuarantorAge" Type="Int32" />
+    <Property Name="GuarantorOccupation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GuarantorMobileNumber" Type="Int64" />
+    <Property Name="GuarantorAddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="GuarantorSignature" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LoanDetail">
+    <Key>
+      <PropertyRef Name="LoanId" />
+    </Key>
+    <Property Name="LoanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HirerId" Type="Int32" Nullable="false" />
+    <Property Name="LoanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FinanceRs" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Interest" Type="Decimal" Precision="2" Scale="2" Nullable="false" />
+    <Property Name="Period" Type="Int32" Nullable="false" />
+    <Property Name="Installment" Type="Int32" Nullable="false" />
+    <Property Name="RequiredLoanRs" Type="Decimal" Precision="2" Scale="2" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifirdBy" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Hirer" Relationship="Self.FK__LoanDetai__Hirer__5FB337D6" FromRole="LoanDetails" ToRole="Hirer" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__User__RoleId__1DE57479" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MobileNumber" Type="Int32" Nullable="false" />
+    <Property Name="BranchId" Type="Int32" />
+    <Property Name="EmailId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Branch" Relationship="Self.FK__User__BranchId__1CF15040" FromRole="User" ToRole="Branch" />
+    <NavigationProperty Name="Role" Relationship="Self.FK__User__RoleId__1DE57479" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="VehicleDetail">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Name="VehicleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HirerId" Type="Int32" Nullable="false" />
+    <Property Name="EngineNo" Type="Int32" />
+    <Property Name="ChassisNo" Type="Int32" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KeyNo" Type="Int32" />
+    <Property Name="VehicleNo" Type="Int32" Nullable="false" />
+    <Property Name="VehicleOnRoadRs" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Hirer" Relationship="Self.FK__VehicleDe__Hirer__571DF1D5" FromRole="VehicleDetails" ToRole="Hirer" />
+  </EntityType>
+  <Association Name="FK__User__BranchId__1CF15040">
+    <End Role="Branch" Type="Self.Branch" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="BranchId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoanDetai__Hirer__5FB337D6">
+    <End Role="Hirer" Type="Self.Hirer" Multiplicity="1" />
+    <End Role="LoanDetails" Type="Self.LoanDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hirer">
+        <PropertyRef Name="HirerId" />
+      </Principal>
+      <Dependent Role="LoanDetails">
+        <PropertyRef Name="HirerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__VehicleDe__Hirer__571DF1D5">
+    <End Role="Hirer" Type="Self.Hirer" Multiplicity="1" />
+    <End Role="VehicleDetails" Type="Self.VehicleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hirer">
+        <PropertyRef Name="HirerId" />
+      </Principal>
+      <Dependent Role="VehicleDetails">
+        <PropertyRef Name="HirerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__RoleId__1DE57479">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FinanceDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Branches" EntityType="Self.Branch" />
+    <EntitySet Name="Hirers" EntityType="Self.Hirer" />
+    <EntitySet Name="LoanDetails" EntityType="Self.LoanDetail" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="VehicleDetails" EntityType="Self.VehicleDetail" />
+    <AssociationSet Name="FK__User__BranchId__1CF15040" Association="Self.FK__User__BranchId__1CF15040">
+      <End Role="Branch" EntitySet="Branches" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoanDetai__Hirer__5FB337D6" Association="Self.FK__LoanDetai__Hirer__5FB337D6">
+      <End Role="Hirer" EntitySet="Hirers" />
+      <End Role="LoanDetails" EntitySet="LoanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__VehicleDe__Hirer__571DF1D5" Association="Self.FK__VehicleDe__Hirer__571DF1D5">
+      <End Role="Hirer" EntitySet="Hirers" />
+      <End Role="VehicleDetails" EntitySet="VehicleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__RoleId__1DE57479" Association="Self.FK__User__RoleId__1DE57479">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

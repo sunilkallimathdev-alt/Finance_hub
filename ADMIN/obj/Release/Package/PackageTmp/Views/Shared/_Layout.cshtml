@@ -1,0 +1,311 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+
+@using ADMIN.API_Repository;
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Language" content="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vehicle Finance - @ViewBag.Title</title>
+    @*<link rel="icon" href="~/CustomFiles/logo.png">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/iCheck/all.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/timepicker/bootstrap-timepicker.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/select2/select2.min.css">
+    <!-- Select2 -->
+    <script src="~/CustomFiles/plugins/select2/select2.full.min.js"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/CustomFiles/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!--Toastr CSS-->
+    <link href="~/CustomFiles/dist/css/toastr.min.css" rel="stylesheet" />
+    <!--DataTable-->
+    <link rel="stylesheet" href="~/CustomFiles/plugins/datatables/dataTables.bootstrap4.css">
+
+    <!--cdn for table mobile responsive--->
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
+    @*<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">*@
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+    @*<script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+        <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>*@
+    <style>
+        #buttons {
+            padding: 5px;
+        }
+
+        .error {
+            color: red !important;
+        }
+    </style>
+    <style>
+        .table td {
+            padding: 0.25rem;
+        }
+
+        h6 {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body class="hold-transition sidebar-mini">
+
+    <script>
+        //if (sessionStorage.getItem("logindetails") == null) {
+        //    window.location.href = "/AdminLogin/index";
+        //}
+
+    </script>
+    @{
+
+        if (Session["logindetails"] == null)
+        {
+            Response.Redirect(Url.Action("index", "AdminLogin"));
+        }
+
+    }
+    <div class="wrapper">
+        @Html.Partial("_MainSideBar")
+        <div class="wrapper">
+            <!-- Left navbar links -->
+            <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+                    </li>
+                </ul>
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Notifications Dropdown Menu -->
+                    <li class="nav-item">
+                        <div id="Builder_logo">
+                            @{
+                                if (Session["logindetails"] != null)
+                                {
+                                    @*var UserDetails = Session["logindetails"];
+                                        var user = (JObject)JsonConvert.DeserializeObject(UserDetails.ToString());
+                                        <label>Welcome , @user.SelectToken("UserName")</label>*@
+
+                                    var UserDetails = Session["logindetails"];
+                                    //var user = (JObject)JsonConvert.DeserializeObject(UserDetails.ToString());
+                                    //var user = UserDetails["UserName"];
+                                    //string user = UserDetails["UserName"].ToString();
+                                    @*<label>Welcome , @UserDetails["UserName"]</label>*@
+                                }
+                            }
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user"></i>
+                            <span class="badge badge-warning navbar-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <div class="dropdown-divider"></div>
+
+                            <a href="/AdminLogin/index" class="dropdown-item">
+                                <i class="fa fa-arrow-right mr-2"></i>Logout
+                                <span class="float-right text-muted text-sm"></span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content-wrapper">
+                @RenderBody()
+            </div>
+            <footer class="main-footer">
+                <strong>Copyright &copy; Anchara Tech Tree - 2021 All Rights Reserved.</strong> Designed and Developed By <a href="http://ancharatechtree.com" target="_blank"> Anchara Tech Tree </a>.
+
+                <div class="float-right d-none d-sm-inline-block">
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <style>
+        h6 {
+            font-size: 1.1rem;
+        }
+    </style>
+    <!-- jQuery -->
+    <script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="~/CustomFiles/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="~/CustomFiles/plugins/datatables/dataTables.bootstrap4.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="~/CustomFiles/js/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+
+
+
+    <script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+
+
+    <!-- Bootstrap 4 -->
+    <script src="~/CustomFiles/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/CustomFiles/plugins/select2/select2.full.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="~/CustomFiles/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="~/CustomFiles/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <!-- bootstrap time picker -->
+    <script src="~/CustomFiles/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="~/CustomFiles/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- iCheck 1.0.1 -->
+    <script src="~/CustomFiles/plugins/iCheck/icheck.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/CustomFiles/plugins/fastclick/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/CustomFiles/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/CustomFiles/dist/js/demo.js"></script>
+    <!--Toastr Min-->
+    <script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+    <link href="~/CustomFiles/dist/css/loader.css" rel="stylesheet" />
+    <script>
+        //setTimeout(function () { $('body').css('zoom', '80%')}, 2000);
+        $('#loader-wrapper').css('display', 'none');
+        $(document).ajaxStart(function () {
+            $('#loader-wrapper').css('display', 'block');
+        }).ajaxStop(function () {
+            $('#loader-wrapper').css('display', 'none');
+            });
+        var isAddEnabled;
+        var isDeleteEnbaled;
+        var isViewEnabled;
+
+        $(document).ready(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2();
+
+            //var table = $('#' + tableId).DataTable({
+            //    responsive: true
+            //});
+            //new $.fn.dataTable.FixedHeader(tableId);
+
+            //var ObjRoles = JSON.parse(localStorage.getItem('PageDetails'));
+            //for (var i = 0; i < ObjRoles.length; i++) {
+
+            //    for (var j = 0; j < ObjRoles[i].PageList.length; j++) {
+
+            //        var path = window.location.pathname;
+            //        var PageURL = ObjRoles[i].PageList[j].PageURL
+            //        if (path == PageURL) {
+            //            if (ObjRoles[i].PageList[j].Is_Add_Edit == true) {
+            //                isAddEnabled = true;
+            //            } else { isAddEnabled = false; }
+            //            if (ObjRoles[i].PageList[j].Is_Delete == true) {
+            //                isDeleteEnbaled = true;
+            //            } else { isDeleteEnbaled = false; }
+            //            if (ObjRoles[i].PageList[j].Is_view == true) {
+            //                isViewEnabled = true;
+            //            } else { isViewEnabled = false; }
+
+            //        }
+
+            //    }
+
+            //}
+
+            //hideshowbuttons();
+            //if (tableId != undefined)
+            //new $.fn.dataTable.FixedHeader(tableId);
+        });
+
+
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2();
+            CloseCard();
+        });
+        function OpenCard() {
+            $('#carddiv').removeClass('collapsed-card');
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+            $('.fa-plus').addClass('fa-minus').removeClass('fa-plus');
+            //$('#bar-button').addClass('fa-minus');
+            //$('#bar-button').removeClass('fa-plus');
+        }
+        function CloseCard() {
+            $('#carddiv').addClass('collapsed-card');
+            //$('.fa-minus').addClass('fa-plus').removeClass('fa-minus');
+            $('#bar-button').addClass('fa-plus').removeClass('fa-minus');
+            //$('#bar-button').removeClass('fa-minus');
+            //$('#bar-button').addClass('fa-plus');
+        }
+        function SuccessAlert(Title, Message) {
+            toastr.success(Message, Title)
+        }
+        function WarningAlert(Title, Message) {
+            toastr.warning(Message, Title)
+        }
+        function DangerAlert(Title, Message) {
+            toastr.error(Message, Title)
+        }
+        $('#@ViewBag.Title').addClass('active');
+        //Hide ADD,UPDATE,DELETE Buttons
+       // window.setInterval(function () {
+         //   hideshowbuttons();
+       // }, 10);
+        function hideshowbuttons(){
+            if (isAddEnabled) {
+                $("#btnadd").show();
+                $(".edit").show();
+                $("#btnreset").show();
+            }
+            else {
+                $("#btnadd").remove();
+                $(".edit").remove();
+                $("#btnreset").remove();
+            }
+            if (isDeleteEnbaled)
+                $(".delete").show();
+            else
+                $(".delete").remove();
+
+        }
+        $(document).ready(function () {
+            $("nav ul a").each(function () {
+                if ($(this).attr("href") == window.location.pathname || $(this).attr("href") == '') {
+                    $(this).parents("li").children("a").addClass("active").parent("li").addClass("menu-open");
+                }
+            })
+        });
+    </script>
+</body>
+</html>

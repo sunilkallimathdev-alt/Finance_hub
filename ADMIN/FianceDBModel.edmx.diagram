@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e023d05174314f3c9be450014606afd6" Name="Diagram1">
+        <EntityTypeShape EntityType="FinanceDBModel.Branch" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinanceDBModel.Role" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinanceDBModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="FinanceDBModel.FK__User__BranchId__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="FinanceDBModel.FK__User__RoleId__1DE57479" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="FinanceDBModel.LoanDetail" Width="1.5" PointX="8" PointY="0.75" />
+        <EntityTypeShape EntityType="FinanceDBModel.VehicleDetail" Width="1.5" PointX="8" PointY="6.375" />
+        <EntityTypeShape EntityType="FinanceDBModel.Hirer" Width="1.5" PointX="5.75" PointY="2.25" />
+        <AssociationConnector Association="FinanceDBModel.FK__LoanDetai__Hirer__5FB337D6" />
+        <AssociationConnector Association="FinanceDBModel.FK__VehicleDe__Hirer__571DF1D5" />
+        <EntityTypeShape EntityType="FinanceDBModel.Payment" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FinanceDBModel.LoanHistory" Width="1.5" PointX="0.75" PointY="10.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

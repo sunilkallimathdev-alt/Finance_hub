@@ -1,0 +1,129 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+
+@using ADMIN.API_Repository;
+<aside class="main-sidebar sidebar-dark-primary elevation-4" id="sidebar" style="min-height:800px;max-height:800px;min-width:250px:overflow:x;">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                @*<img src="~/CustomFiles/logo.png" style="width:8rem;" class="img elevation-2" alt="User Image">*@
+            </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                @{
+                    /**/
+
+                    var UserDetails = Session["logindetails"];
+                    //if (Session["Builderlogindetails"] == null && Session["Vendorlogindetails"] == null && Session["Ownerlogindetails"] == null && Session["CustomerReplogindetails"] == null && Session["PreOwnerlogindetails"] == null)
+                    //{
+
+
+                    @*<li class="nav-item has-treeview">
+                            <a href="/Dashboard/Welcome" class="nav-link" id="Dashboard">
+                                <i class="nav-icon fa fa-dashboard"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>*@
+
+                    <li class="nav-item has-treeview">
+                        <a href="/Dashboard/Welcome" class="nav-link" id="Dashboard">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Dashboard
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-treeview">
+                        <a href="/Registration/Index" class="nav-link" id="Dashboard">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Registration
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="/LoanHistory/Index" class="nav-link" id="Dashboard">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Loan History
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="/UserDetails/Index" class="nav-link" id="Dashboard">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                User Details
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-treeview">
+                        <a href="/ChangePassword/Index" class="nav-link" id="Dashboard">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Change Password
+                            </p>
+                        </a>
+                    </li>
+
+
+
+                    @*<li class="nav-item has-treeview">
+                        <a href="/Dashboard/WelcomeBuilder" class="nav-link" id="Dashboard">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Builder Screens
+                            </p>
+                        </a>*@
+
+                    @*<ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/SubDivision/Index" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Subdivision</p>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a href="/Team_Member/index" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Team Members</p>
+                                </a>
+                            </li>
+
+
+                        </ul>*@
+
+                    @*</li>*@
+
+
+
+
+
+
+                    //}
+
+                }
+
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+
+<script>
+    var isAddEnabled = true;
+    var isUpdateEnabled = true;
+    var isDeleteEnbaled = true;
+</script>

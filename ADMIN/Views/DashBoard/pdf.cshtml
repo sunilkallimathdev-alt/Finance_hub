@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "pdf";
+}
+
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="header"><img class="img-size-32" src="~/CustomFiles/ICONs/architecture-and-city.png" /> House Documents</h2>
+        </div>
+        <div class="card-body" id="lotDIV">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="background-color: ghostwhite;">
+                        <div class="card-header"> Survey Plan <span style="float:right"> <a href="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" download="plan1"><i class="fa fa-download __web-inspector-hide-shortcut__"></i> &nbsp; Download</a> </span></div>
+                        <div class="card-body">
+                            <iframe id="my_iframe" scrolling="no" class="form-control" src="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" width="300px" height="200px"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="background-color: ghostwhite;">
+                        <div class="card-header"> Survey Plan</div>
+                        <div class="card-body">
+                            <iframe id="my_iframe" scrolling="no" class="form-control" src="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" width="300px" height="200px"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="background-color: ghostwhite;">
+                        <div class="card-header"> Survey Plan</div>
+                        <div class="card-body">
+                            <iframe id="my_iframe" scrolling="no" class="form-control" src="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" width="300px" height="200px"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2 class="header"><img class="img-size-32" src="~/CustomFiles/ICONs/appliances.jpg" /> Appliances Documents</h2>
+        </div>
+
+     
+        <div class="card-body" id="appliancesDIV">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="background-color: ghostwhite;">
+                        <div class="card-header"> Survey Plan <span style="float:right"> <a href="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" download="plan1"><i class="fa fa-download __web-inspector-hide-shortcut__"></i> &nbsp; Download</a> </span></div>
+                        <div class="card-body">
+                            <iframe id="my_iframe" scrolling="no" class="form-control" src="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" width="300px" height="200px"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="background-color: ghostwhite;">
+                        <div class="card-header"> Survey Plan</div>
+                        <div class="card-body">
+                            <iframe id="my_iframe" scrolling="no" class="form-control" src="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" width="300px" height="200px"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="background-color: ghostwhite;">
+                        <div class="card-header"> Survey Plan</div>
+                        <div class="card-body">
+                            <iframe id="my_iframe" scrolling="no" class="form-control" src="http://homeappliancesapi.myprelaunch.in/Images/FloorPlan/1/yetrywery_1.pdf" width="300px" height="200px"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('a[href$=".pdf"]')
+            .attr('download', '')
+            .attr('target', '_blank');
+    });
+</script>
+

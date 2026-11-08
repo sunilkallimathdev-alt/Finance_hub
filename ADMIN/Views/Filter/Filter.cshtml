@@ -1,0 +1,125 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AVA Homes</title>
+    <link rel="icon" href="~/CustomFiles/logo.png">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <!-- iCheck -->
+    <link href="~/CustomFiles/dist/css/adminlte.css" rel="stylesheet" />
+    <a href="~/CustomFiles/dist/css/adminlte.css.map">
+        <link href="~/CustomFiles/dist/css/loader.css" rel="stylesheet" />
+        <link href="~/CustomFiles/dist/css/toastr.min.css" rel="stylesheet" />
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <style>
+            #buttons {
+                padding: 5px;
+            }
+
+            .error {
+                color: red !important;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #00870e;
+            }
+
+            li {
+                float: left;
+                display: inline;
+            }
+
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+
+                    li a:hover {
+                        background-color: #ffffff;
+                    }
+           
+        </style>
+    </a>
+</head>
+
+<body class="hold-transition search-results">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="image">
+                   <img src="~/CustomFiles/logo.png" style="width:8rem;" class="img elevation-2" alt="User Image">
+                </div>
+            </div>
+           
+            <ul>
+                <li><a href="/Filter/Register">Sign Up</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+
+    <div class="container">
+
+        @*<a class="active" href="/Filter/Register">Register</a>*@
+        <form id="Serch">
+            <div class="search-results">
+                <div class="login-box">
+
+                    @*@model IEnumerable<API.Models.Product_Model>*@
+
+                    @using (Html.BeginForm("Filter", "Filter", FormMethod.Get))
+                    {
+                        <p>
+                            Find: @Html.TextBox("Address")
+                            <input type="submit" value="Search">
+                        </p>
+                    }
+
+                    <table>
+                        @foreach (var Lots in Model)
+                        {
+                            <tr>
+                                <td>@Lots.Street_Name</td>
+
+                            </tr>
+                        }
+                    </table>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="~/CustomFiles/js/Common_js.js"></script>
+    <script src="~/CustomFiles/dist/js/toastr.min.js"></script>
+    <script>
+
+
+    </script>
+</body>
+</html>
+

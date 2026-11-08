@@ -1,0 +1,264 @@
+﻿
+@{
+    ViewBag.Title = "Role";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">@ViewBag.Title</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Dashboard/Welcome">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <form id="formrole">
+            <div class="card card-info" id="carddiv">
+                <div class="card-header" data-widget="collapse" style="cursor:pointer">
+                    <h3 class="card-title">Add @ViewBag.Title</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool"><i class="fa"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Role Name<span style="color:red">*</span></label>
+                                <input class="form-control" type="text" name="RoleName" maxlength="100" onkeypress="return NotanHTML(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Role Type<span style="color:red">*</span></label>
+                                <select class="form-control" name="RoleType">
+                                    <option value="platform">Platform</option>
+                                    <option value="builder">Builder</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Status<span style="color:red">*</span></label>
+                                <select class="form-control" name="IsActive">
+                                    <option value="true">Active</option>
+                                    <option value="false">InActive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-success" id="btnadd">Add @ViewBag.Title</button>
+                    <button type="button" class="btn btn-warning" id="btnupdate">Update @ViewBag.Title</button>
+                    <button type="button" class="btn btn-danger" onclick="ClearFields()" id="btnreset">Cancel</button>
+                    <input type="hidden" name="HDID" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">@ViewBag.Title List</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <div id="buttons"></div>
+            <table id="tbl" class="table table-bordered table-striped" style="width:100%"></table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+</section>
+<script src="~/CustomFiles/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="~/CustomFiles/js/Common_js.js"></script>
+<script>
+
+        var tableId = "tbl";
+
+        $('#formrole').validate({
+            rules: {
+                RoleName: {
+                    required: true,
+                },
+            }
+        });
+
+        var form = $("#formrole");
+        form.validate();
+
+       $(document).ready(function () {
+            BindTableData();
+            $('#btnupdate').hide();
+            $("#btnadd").click(function () {
+                if (form.valid()) {
+                    var myobj = new Object();
+                    myobj.RoleName = $('[name="RoleName"]').val();
+                    myobj.IsActive = $('[name="IsActive"]').val();
+                    myobj.Type=  $('[name="RoleType"]').val();
+                    $.post("@Url.Action("AddRole", "Role")", { ObjRole: JSON.stringify(myobj) }, function (data) {
+                        var Res = JSON.parse(data);
+                        if (Res.StatusCode == 200) {
+                            SuccessAlert("@ViewBag.Title", "Added Successfully.");
+                            ClearFields();
+                            BindTableData();
+                        }
+                        else
+                            WarningAlert("@ViewBag.Title", Res.Message);
+                    });
+                }
+                else {
+                    DangerAlert(" ", "Recheck the fields.");
+                }
+
+        });
+
+            $("#btnupdate").click(function () {
+                if (form.valid()) {
+                    var myobj = new Object();
+                    myobj.RoleID = $('[name="HDID"]').val();
+                    myobj.RoleName = $('[name="RoleName"]').val();
+                    myobj.IsActive = $('[name="IsActive"]').val();
+                    myobj.Type = $('[name="RoleType"]').val();
+                    $.post("@Url.Action("UpdateRole", "Role")", { ObjRole: JSON.stringify(myobj) }, function (data) {
+                        var Res = JSON.parse(data);
+                        if (Res.StatusCode == 200) {
+                            SuccessAlert("@ViewBag.Title", "Updated Successfully.");
+                            BindTableData();
+                            $('#btnupdate').hide();
+
+                            ClearFields();
+                        }
+                        else
+                            WarningAlert("@ViewBag.Title", Res.Message);
+                    });
+                }
+                else {
+                    DangerAlert(" ", "Recheck the fields.");
+                }
+
+
+
+            });
+    });
+        function GetData(RoleID) {
+            $.get("@Url.Action("GetRole", "Role")", { RoleID: RoleID }, function (data) {
+                ClearFields();
+                var myobj = JSON.parse(data);
+                if (myobj.ObjectResult != null) {
+                    $('[name="HDID"]').val(myobj.ObjectResult.RoleID);
+                    $('[name="RoleName"]').val(myobj.ObjectResult.RoleName);
+                   $('[name="RoleType"]').val(myobj.ObjectResult.Type);
+                           if (myobj.ObjectResult.IsActive)
+                        $('[name="IsActive"]').val("true");
+                    else
+                        $('[name="IsActive"]').val("false");
+                    $("#btnadd").hide();
+                    $('#btnupdate').show();
+                    OpenCard();
+                }
+            });
+        }
+
+        function DeleteData(RoleID) {
+            var alert = confirm("Are you sure want to Delete");
+            if (alert) {
+                $.post("@Url.Action("DeleteRole", "Role")", { RoleID: RoleID }, function (data) {
+                    var myobj = JSON.parse(data);
+                    if (myobj.StatusCode == 200) {
+                        SuccessAlert("@ViewBag.Title", "Deleted Successfully.");
+                        ClearFields();
+                    }
+                    else
+                        WarningAlert("@ViewBag.Title", myobj.Message);
+                    BindTableData();
+                });
+            }
+    }
+    function ClearFields() {
+            $('[name="HDID"]').val(null);
+            $('[name="RoleName"]').val(null);
+            $('[name="IsActive"]').val('true');
+            $('[name="RoleType"]').val('platform');
+            $('.error').html("");
+            $("#btnadd").show();
+            $('#btnupdate').hide();
+        }
+
+
+        function BindTableData() {
+
+            $.get("@Url.Action("GetRoleList", "Role")", function (data) {
+                var myObject = JSON.parse(data);
+            var TableDate = [];
+            for (var i = 0; i < myObject.length; i++) {
+                var row = [];
+                row.push(myObject[i].RoleName);
+                if (myObject[i].Type == "platform")
+                    row.push("<span class='badge bg-info float-right'>Platform</span>");
+                else
+                    row.push("<span class='badge bg-warning float-right'>Builder</span>");
+
+                if (myObject[i].IsActive)
+                    row.push("<span class='badge bg-success float-right'>Active</span>");
+                else
+                    row.push("<span class='badge bg-danger float-right'>InActive</span>");
+                if (isAddEnabled)
+                    row.push('<button type="button" class="btn btn-info btn-sm edit" onclick="GetData(' + myObject[i].RoleID + ')">Edit</button>');
+                else
+                    row.push("");
+                if (isDeleteEnbaled)
+                 row.push('<button type="button" class="btn btn-danger btn-sm delete" onclick="DeleteData(' + myObject[i].RoleID + ')">Delete</button>');
+                else
+                    row.push("");
+                TableDate.push(row);
+            }
+            $('#' + tableId).DataTable({
+                destroy: true,
+                data: TableDate,
+                scrollX: true,
+                columns: [
+                    { title: "Role Name" },
+                    { title: "Role Type" },
+                    { title: "Status " },
+                    { title: " " },
+                    { title: " " }
+                ],
+                   aoColumnDefs: [
+                    {
+                        bSortable: false,
+                        aTargets: [-1, -2]
+                    }
+
+                ]
+            });
+            hideshowbuttons();
+                var buttons = new $.fn.dataTable.Buttons($('#' + tableId).DataTable(), {
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5'
+
+                ]
+            }).container().appendTo($('#buttons'));
+                $('.buttons-html5').addClass('btn btn-default btn-sm');
+            });
+            hideshowbuttons();
+        }
+
+</script>
+
+
+
+
+
